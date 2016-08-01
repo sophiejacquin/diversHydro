@@ -1,0 +1,135 @@
+/** -*- mode: c++; c-indent-level: 4; c++-member-init-indent: 8; comment-column: 35; -*-
+
+The above line is useful in Emacs-like editors
+ */
+
+/*
+Template for simple mutation operators
+======================================
+*/
+
+#ifndef eodeltaPlaningMutation_H
+#define eodeltaPlaningMutation_H
+
+
+#include <eoOp.h>
+
+/**
+ *  Always write a comment in this format before class definition
+ *  if you want the class to be documented by Doxygen
+ *
+ * THere is NO ASSUMPTION on the class GenoypeT.
+ * In particular, it does not need to derive from EO
+ */
+template<class GenotypeT>
+class eodeltaPlaningMutation: public eoMonOp<GenotypeT>
+{
+public:
+  /**
+   * Ctor - no requirement
+   */
+// START eventually add or modify the anyVariable argument
+  eodeltaPlaningMutation(double _pas, double* _qmax, double _sumQmax,double _Vmax,double* _V,int _nbPeriodes)
+  //  eodeltaPlaningMutation( varType  _anyVariable) : anyVariable(_anyVariable)
+// END eventually add or modify the anyVariable argument
+  {
+    // START Code of Ctor of an eodeltaPlaningEvalFunc object
+      pas =_pas;
+      qmax =_qmax;
+      sumQmax = _sumQmax;
+      Vmax= _Vmax;
+      V= _V;
+      nbPeriodes=_nbPeriodes;
+     // cout << V[8350]<<endl;
+    // END   Code of Ctor of an eodeltaPlaningEvalFunc object
+  }
+
+  /// The class name. Used to display statistics
+  string className() const { return "eodeltaPlaningMutation"; }
+
+  /**
+   * modifies the parent
+   * @param _genotype The parent genotype (will be modified)
+   */
+  bool operator()(GenotypeT & _genotype)
+  {
+     // cout <<"debut mutation \n ";
+      bool isModified(true);
+    // START code for mutation of the _genotype object
+      bool isMute(false);
+      int h;
+      int sens;
+      double max, min;
+      double pasVariable;
+      eoUniformGenerator<int> rng(0,nbPeriodes-2);
+      eoUniformGenerator<int> rngSens(0,1);
+      //Choix du sommet à muter :
+      while (isMute==false)
+      {
+          //Choix du sommet à muter :
+          h=rng();
+          //choix du sens de la mutation :
+          sens=rngSens();
+          if(sens==0) sens =-1;
+          // Calcul du max et du min
+          max= qmax[h];
+          //cout << "h : " <<h<<" qteh+1 : "<<_genotype.getQuantite(h+1)<<" qteh : "<<_genotype.getQuantite(h)<< " qte h-1 : "<<_genotype.getQuantite(h-1)<<endl;
+          if(max> _genotype.getQuantite(h+1))max =_genotype.getQuantite(h+1);
+          //if(max>_genotype.getQuantite(h-1)+sumQmax) max =_genotype.getQuantite(h-1)+sumQmax;
+	  if(max<V[h]-Vmax) max= V[h]-Vmax;
+          min = V[h]-Vmax;
+          if(min< _genotype.getQuantite(h-1)) min = _genotype.getQuantite(h-1);
+         // if((_genotype.getQuantite(h+1)!= V[h+1]-Vmax&& h+1!= nbPeriodes-1) && min< _genotype.getQuantite(h+1)-sumQmax) min = _genotype.getQuantite(h+1)-sumQmax;
+          // Verification si possible de muter dans sens :
+	eoUniformGenerator<double> echantillonage(pas/2,pas*2); 
+	pasVariable = echantillonage();
+          if(_genotype.getQuantite(h)+ sens*pasVariable <=max && _genotype.getQuantite(h)+ sens*pasVariable>=min)
+          {
+              //on mute:
+              _genotype.setQuantite(h, _genotype.getQuantite(h)+ sens*pasVariable);
+              _genotype.setEval(h,-1);
+              _genotype.setEval(h+1,-1);
+              // on dit qu'il y a eu mutation :
+              isMute=true;
+          }
+          //si ce sens est impossible on test l'autre :
+          if(isMute==false)
+          {
+              sens= -1*sens;
+              if(_genotype.getQuantite(h)+ sens*pasVariable <=max && _genotype.getQuantite(h)+ sens*pasVariable>=min)
+              {
+                  //on mute:
+                  _genotype.setQuantite(h, _genotype.getQuantite(h)+ sens*pasVariable);
+                  _genotype.setEval(h,-1);
+                  _genotype.setEval(h+1,-1);
+                  // on dit qu'il y a eu mutation :
+                  isMute=true;
+              }
+              
+          }
+      }
+       isModified = true;
+       /** Requirement
+	* if (_genotype has been modified)
+	*     isModified = true;
+	* else
+	*     isModified = false;
+	*/
+          //cout <<"fin mutation \n ";
+    return isModified;
+    // END code for mutation of the _genotype object
+  }
+
+private:
+// START Private data of an eodeltaPlaningMutation object
+  //  varType anyVariable;		   // for example ...
+    double pas;
+    double* qmax;
+    double sumQmax;
+    double Vmax;
+    double* V;
+    int nbPeriodes;
+// END   Private data of an eodeltaPlaningMutation object
+};
+
+#endif

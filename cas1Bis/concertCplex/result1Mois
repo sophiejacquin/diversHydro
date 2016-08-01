@@ -1,0 +1,9 @@
+Elapsed real time = 29089.70 sec. (tree size = 52524.71 MB, solutions = 142)
+Nodefile size = 52389.44 MB (13237.82 MB after compression)
+ 2446731 2378834  3171997.1108   539  3094415.3090  3189664.3891 21541317    3.08%
+Processus arrêté
+
+real	485m38.362s
+user	1510m50.801s
+sys	54m40.057s
+

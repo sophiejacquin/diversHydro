@@ -1,0 +1,127 @@
+setwd("Dropbox/These-Sophie/cas1Bis/Résultats/Test3")
+data=read.table("test1",skip=1)
+best3<-data[,4]
+moy3<-data[,5]
+temps3<-data[,3]
+for(i in 2:20){}
+for(i in 2:20){
+ch<-paste("test",i,sep="")
+data=read.table(ch,skip=1)
+best3=cbind(best3,data[,4])
+moy3=cbind(moy3,data[,3])
+temps3=cbind(temps3,data[,3])
+}
+best3
+data=read.table("test1",skip=1)
+data
+temps3<-data[,3]
+best3<-data[,4]
+moy3<-data[,5]
+moy3
+for(i in 2:20){
+ch<-paste("test",i,sep='')
+data=read.table(ch,skip=1)
+temps3=cbind(temps3,data[,3])
+moy3=cbind(moy3,data[,5])
+best3=cbind(best3,data[,4])
+}
+for(i in 2:20){
+ch<-paste("test",i,sep='')
+data=read.table(ch,skip=1)
+best3<-cbind(best3,data[,4])
+}
+best3
+??cbind
+data<-read.table("test1",skip=1)
+best3<-data[,4]
+moy3<-data[,5]
+temps3<-data[,3]
+for(i in 3:20){
+ch<-paste("test",i,sep='')
+data=read.table(ch,skip=1)
+best3=cbind(best3,data[,4])
+moy3=cbind(moy3,data[,5])
+temps3=cbind(temps3,data[,3])
+}
+moyMoy3<- rowMeans(moy3)
+plot(moy3)
+plot(moyMoy3)
+moyBest3<-rowMeans(best3)
+points(moyBest3,col='red')
+myoyTemps3=rowMeans(temps3)
+plot(moyBest,myoyTemps3)
+plot(moyBest3,myoyTemps3)
+plot(myoyTemps3,moyBest3)
+setwd("../Test/")
+data<-read.table("testGrand1",skip=1)
+moy1<-data[,5]
+temps1<-data[,3]
+best1<-data[,4]
+for(i in 2:20){
+ch<-paste("tesGrandt",i,sep='')
+best1<-cbind(best1,data[,4])
+g}
+best1<-data[,4]
+for(i in 2:20){
+ch<-paste("tesGrandt",i,sep='')
+data<-read.table(ch,skip=1)
+best1<-cbind(best1,data[,4])
+moy1=cbind(moy1,data[,5])
+temps1=cbind(temps1,data[,3])
+}
+for(i in 2:20){
+ch<-paste("tesGrand",i,sep='')
+data<-read.table(ch,skip=1)
+temps1=cbind(temps1,data[,3])
+moy1=cbind(moy1,data[,5])
+best1<-cbind(best1,data[,4])
+}
+for(i in 2:20){
+ch<-paste("testGrand",i,sep='')
+best1<-cbind(best1,data[,4])
+moy1=cbind(moy1,data[,5])
+temps1=cbind(temps1,data[,3])
+}
+moyTemps1<-roxMeans(temps1)
+moyTemps1<-rowMeans(temps1)
+moyBest1<-rowMeans(best1)
+moyMoy1<-rowMeans(moy1)
+points(moyBest1,moyTemps1,col='red')
+moyBest1
+points(moyBest1,moyTemps1,col='red')
+plot(moyBest1,moyTemps1,col='red')
+plot(moyTemps1,moyBest1,col='red')
+points(moyTemps3,moyBest3,col='red')
+points(myoyTemps3,moyBest3,col='red')
+plot(moyTemps1,moyBest1,col='red')
+points(myoyTemps3,moyBest3)
+setwd(../Test2)
+setwd("../Test2/")
+data<-read.table("test1",skip=1)
+best1<-data[,4]
+moy1<-data[,5]
+temps1<-data[,3]
+for(i in 2:6){
+ch<-paste("test",i,sep='')
+data<-read.table(ch,skip=1)
+best1<-cbind(best1,data[,4])
+moy1<-cbind(moy1,data[,5])
+temps1<-cbind(temps1,data[,3])
+}
+moyTemps2<-roxMeans(temps1)
+moyTemps2<-rowMeans(temps1)
+moyBest2<-rowMeans(best1)
+points(moyTemps2,moyBest2,vol='blue')
+plot(moyTemps2,moyBest2,col='blue')
+points(moyTemps1,moyBest1,vol='red')
+points(moyTemps2,moyBest2,col='red')
+points(moyTemps3,moyBest3,col='blue')
+points(myoyTemps3,moyBest3,col='blue')
+moyBest3[3000]
+moyTemps3[3000]
+myoyTemps3[3000]
+moyTemps3[2000]
+myoyTemps3[2000]
+moyBest3[2000]
+moyBest3[1000]
+myoyTemps3[1000]

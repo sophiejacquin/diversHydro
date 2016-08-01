@@ -1,0 +1,50 @@
+./test.bash : ligne 8 :  5117 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.523s
+user	0m3.788s
+sys	0m1.464s
+./test.bash : ligne 8 :  5120 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.421s
+user	0m3.840s
+sys	0m1.492s
+./test.bash : ligne 8 :  5123 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.444s
+user	0m3.920s
+sys	0m1.432s
+./test.bash : ligne 8 :  5126 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.427s
+user	0m3.792s
+sys	0m1.544s
+./test.bash : ligne 8 :  5129 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.481s
+user	0m3.780s
+sys	0m1.608s
+./test.bash : ligne 8 :  5359 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.480s
+user	0m3.628s
+sys	0m1.760s
+./test.bash : ligne 8 :  5362 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.391s
+user	0m3.688s
+sys	0m1.612s
+./test.bash : ligne 8 :  5365 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.416s
+user	0m3.844s
+sys	0m1.480s
+./test.bash : ligne 8 :  5369 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.458s
+user	0m3.804s
+sys	0m1.564s
+./test.bash : ligne 8 :  5372 Erreur de segmentation  (core dumped) ./solveur1Semaine < $entre >> test1Semaine
+
+real	0m5.429s
+user	0m3.700s
+sys	0m1.636s

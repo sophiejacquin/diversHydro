@@ -1,0 +1,14 @@
+#!/bin/bash
+i=0 # on initialise le compteur 
+while [ $i -le 730 ]; do 
+var=testGrand${i}
+entre=donne$i
+echo 12 >> $entre
+v=12
+prod=$((v*i))
+echo $prod >> $entre
+(time ./solveur1Bis <$entre >>test1demiJ )>>temps1demiJ 2<&1 
+rm $entre
+let $[ i+=1 ] # incremente i de 1 a chaque boucle 
+done
+

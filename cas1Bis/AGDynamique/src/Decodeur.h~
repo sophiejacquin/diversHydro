@@ -1,0 +1,176 @@
+//
+//  Decodeur.h
+//  
+//
+//  Created by Sophie Jacquin on 14/11/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#ifndef _Decodeur_h
+#define _Decodeur_h
+#include "Turbine.h"
+
+#include <ilcplex/ilocplex.h>
+#include <ilcplex/cplex.h>
+#include<ilconcert/ilomodel.h>
+
+class Decodeur{
+    private :
+    vector<Turbine> turbines;
+    int nbT;
+    public :
+    Decodeur ()
+    {
+        
+        nbT=0;
+    }
+    Decodeur (vector<Turbine> _turbines,int _nbTurbines)
+    {
+        turbines= _turbines;
+        nbT=_nbTurbines;
+    }
+    double evaluer(double Vinit,double quantite)
+    {
+	//cout <<"dans decodeur\n";
+        int i,j,k,l,m,cont;
+        
+        int intervalIni=0;
+        int trouve=0;
+	
+        
+        double eval;
+	l=1;
+       // cout << Vinit <<endl;
+	//cout<<turbines[0].getNbIntervalles()<<endl;
+        //Recherche de l'intervalle dans lequel se trouve Vinit :
+        
+        while(l < turbines[0].getNbIntervalles() && trouve==0)
+        {
+            if( Vinit < turbines[0].getIntervalle(l))
+            {
+                if((l>0 && Vinit >= turbines[0].getIntervalle(l-1)) || (l==0))
+                {
+                    intervalIni=l;
+                    trouve=1;
+                }
+            }
+            l++;
+        }
+
+        //cout<<"interval trouvé \n";
+        cout << "quantite "<<quantite<<endl;
+        //declaration de l'ienvironnement:
+        
+        IloEnv env;
+        
+        //Création du modèle :
+        
+        IloModel model(env);
+        
+        
+        
+        //Déclaration des variables :
+        
+        IloInt nbTurbines =nbT;
+        IloNumVarArray x(env,nbTurbines,0,IloInfinity);
+        IloNumVarArray d(env,nbTurbines,0,1,ILOBOOL);
+        IloNumVar r(env,0,IloInfinity);
+        
+        
+        
+        //La fonction objective :
+        IloExpr objective(env);
+        //cout <<intervalIni<<endl;
+        
+        for(i=0;i<nbTurbines;i++)
+        {
+            
+            IloNum w = turbines[i].getW(intervalIni) ;
+         // cout<< turbines[i].getW(intervalIni)<<endl ;
+            
+            objective += w * x[i];
+            
+        }
+        
+        
+        model.add(IloMaximize(env,objective));
+        
+        //cout <<"fonction objective \n";
+        //Borne supérieure pour xtih :
+        IloRangeArray borneSupX(env,nbTurbines);
+        cont=0;
+        for(i=0;i<nbTurbines;i++)
+        {
+            IloNum qmax = turbines[i].getQMax(intervalIni)/3600;
+            borneSupX[cont]= IloAdd(model,x[i] -qmax*d[i] <= 0) ;
+            
+            cont++;
+            
+        }
+        //Borne inférieure pour xtih :
+        IloRangeArray borneInfX(env,nbTurbines);
+        cont=0;
+        for(i=0;i<nbTurbines;i++)
+        {
+            IloNum wij=turbines[i].getW(intervalIni);
+            
+            IloNum prodMin =  turbines[i].getProductMin();
+            // cout <<"prodMin "<<prodMin<<"w "<<wij<<"   "<<endl;
+            borneInfX[cont]= IloAdd( model, wij* x[i]-prodMin*d[i] >= 0 );
+            cont++;
+            
+        }
+        //Quantité d'eau débitée = quantite :
+        IloExpr volumetrie(env);
+        
+        volumetrie+= r;
+        for(i=0;i<nbTurbines;i++)
+        {
+            
+            
+            volumetrie+=  3600* x[i];
+            
+            
+        }
+        
+        
+        IloRange volumeDebite(env,quantite,volumetrie,quantite);
+      //  cout << "quantite dans decodeur :"<<quantite <<endl;
+        model.add(volumeDebite);
+       // cout <<"model créé\n";
+        //Résolution :
+        
+        
+        IloCplex cplex(env);
+        
+        cplex.extract(model);
+        //pour que les details sur la resolution avec cplex ne soient pas affichés :
+        cplex.setOut(env.getNullStream());
+        cplex.solve();
+        //cout << "Solution status = " << cplex.getStatus() << endl;
+        eval= cplex.getObjValue();
+        
+        //Liberation de la mémoire :
+        
+        r.end();
+        x.end();
+        d.end();
+        objective.end();
+        volumetrie.end();
+        borneInfX.end();
+        borneSupX.end();
+        cplex.end();
+        
+        env.end();
+        
+        //Fin
+        
+        
+        //cout<<"sort de decodeur \n";
+        return eval;
+
+    }
+    
+};
+
+#endif

@@ -1,0 +1,1013 @@
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `isSoln(cpxenv*, cpxlp*)':
+ilocplex.cpp:(.text+0xb05): undefined reference to `CPXgetstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::hasLazyConstraints() const':
+ilocplex.cpp:(.text+0xc13): undefined reference to `CPXEgetnumlazyconstraints'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::hasUserCuts() const':
+ilocplex.cpp:(.text+0xc43): undefined reference to `CPXEgetnumusercuts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplex::GetPreviewMsg(char*, long)':
+ilocplex.cpp:(.text+0xe63): undefined reference to `CPXEinitcomp'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplex::GetAcademicMsg(char*, long)':
+ilocplex.cpp:(.text+0xe93): undefined reference to `CPXEinitcomp'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `rowName':
+ilocplex.cpp:(.text+0x13c5): undefined reference to `CPXEgetorigrowind'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `colName':
+ilocplex.cpp:(.text+0x151f): undefined reference to `CPXEgetorigcolind'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::cpxthrow(int) const':
+ilocplex.cpp:(.text+0x270e): undefined reference to `CPXgeterrorstring'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getCplexTime() const':
+ilocplex.cpp:(.text+0x2745): undefined reference to `CPXgettime'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getMax(IloCplex::NumParam) const':
+ilocplex.cpp:(.text+0x278a): undefined reference to `CPXinfodblparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getMax(IloCplex::LongParam) const':
+ilocplex.cpp:(.text+0x27e8): undefined reference to `CPXgetparamtype'
+ilocplex.cpp:(.text+0x280a): undefined reference to `CPXinfolongparam'
+ilocplex.cpp:(.text+0x2854): undefined reference to `CPXinfointparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getMax(IloCplex::IntParam) const':
+ilocplex.cpp:(.text+0x2899): undefined reference to `CPXinfointparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getMin(IloCplex::NumParam) const':
+ilocplex.cpp:(.text+0x28da): undefined reference to `CPXinfodblparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getMin(IloCplex::LongParam) const':
+ilocplex.cpp:(.text+0x2938): undefined reference to `CPXgetparamtype'
+ilocplex.cpp:(.text+0x295b): undefined reference to `CPXinfolongparam'
+ilocplex.cpp:(.text+0x29a5): undefined reference to `CPXinfointparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getMin(IloCplex::IntParam) const':
+ilocplex.cpp:(.text+0x29ea): undefined reference to `CPXinfointparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDefault(IloCplex::StringParam) const':
+ilocplex.cpp:(.text+0x2a33): undefined reference to `CPXinfostrparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDefault(IloCplex::NumParam) const':
+ilocplex.cpp:(.text+0x2a7a): undefined reference to `CPXinfodblparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDefault(IloCplex::LongParam) const':
+ilocplex.cpp:(.text+0x2ab8): undefined reference to `CPXgetparamtype'
+ilocplex.cpp:(.text+0x2adb): undefined reference to `CPXinfolongparam'
+ilocplex.cpp:(.text+0x2b25): undefined reference to `CPXinfointparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDefault(IloCplex::IntParam) const':
+ilocplex.cpp:(.text+0x2b6a): undefined reference to `CPXinfointparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDefault(IloCplex::BoolParam) const':
+ilocplex.cpp:(.text+0x2baa): undefined reference to `CPXinfointparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getParam(IloCplex::StringParam) const':
+ilocplex.cpp:(.text+0x2bf3): undefined reference to `CPXgetstrparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getParam(IloCplex::NumParam) const':
+ilocplex.cpp:(.text+0x2c35): undefined reference to `CPXgetdblparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getParam(IloCplex::BoolParam) const':
+ilocplex.cpp:(.text+0x2c75): undefined reference to `CPXgetintparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getParam(IloCplex::LongParam) const':
+ilocplex.cpp:(.text+0x2cb8): undefined reference to `CPXgetparamtype'
+ilocplex.cpp:(.text+0x2cd6): undefined reference to `CPXgetlongparam'
+ilocplex.cpp:(.text+0x2d20): undefined reference to `CPXgetintparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getParam(IloCplex::IntParam) const':
+ilocplex.cpp:(.text+0x2d58): undefined reference to `CPXgetintparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setParam(IloCplex::StringParam, char const*)':
+ilocplex.cpp:(.text+0x2e2c): undefined reference to `CPXsetstrparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setParam(IloCplex::NumParam, double)':
+ilocplex.cpp:(.text+0x2e5c): undefined reference to `CPXsetdblparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setParam(IloCplex::BoolParam, long)':
+ilocplex.cpp:(.text+0x2ea3): undefined reference to `CPXsetintparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setParam(IloCplex::LongParam, long long)':
+ilocplex.cpp:(.text+0x2f08): undefined reference to `CPXgetparamtype'
+ilocplex.cpp:(.text+0x2f24): undefined reference to `CPXsetlongparam'
+ilocplex.cpp:(.text+0x2f54): undefined reference to `CPXsetintparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setParam(IloCplex::IntParam, int)':
+ilocplex.cpp:(.text+0x2fbc): undefined reference to `CPXsetintparam'
+ilocplex.cpp:(.text+0x2fce): undefined reference to `CPXsetintparam'
+ilocplex.cpp:(.text+0x3001): undefined reference to `CPXsetintparam'
+ilocplex.cpp:(.text+0x304f): undefined reference to `CPXsetintparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o):ilocplex.cpp:(.text+0x306c): more undefined references to `CPXsetintparam' follow
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setDefaults()':
+ilocplex.cpp:(.text+0x363c): undefined reference to `CPXsetdefaults'
+ilocplex.cpp:(.text+0x3653): undefined reference to `CPXsetintparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getConflict(IloConstraint) const':
+ilocplex.cpp:(.text+0x37a9): undefined reference to `CPXgetconflictext'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::freePresolve()':
+ilocplex.cpp:(.text+0x3813): undefined reference to `CPXfreepresolve'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getObjCoef(int*) const':
+ilocplex.cpp:(.text+0x3851): undefined reference to `CPXgetobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::flushCtype()':
+ilocplex.cpp:(.text+0x38d8): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x38ff): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x391c): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0x3941): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x3976): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0x399e): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0x39bc): undefined reference to `CPXcopyctype'
+ilocplex.cpp:(.text+0x39dc): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x39fd): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0x3a1f): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0x3a44): undefined reference to `CPXchgprobtype'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::doSolve(long)':
+ilocplex.cpp:(.text+0x3a97): undefined reference to `CPXlpopt'
+ilocplex.cpp:(.text+0x3ac3): undefined reference to `CPXgetstat'
+ilocplex.cpp:(.text+0x3b14): undefined reference to `CPXqpopt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::fixProbType()':
+ilocplex.cpp:(.text+0x3b33): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x3b57): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0x3b84): undefined reference to `CPXchgprobtype'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setRange(int*, double, double)':
+ilocplex.cpp:(.text+0x3c1e): undefined reference to `CPXchgsense'
+ilocplex.cpp:(.text+0x3c46): undefined reference to `CPXchgrhs'
+ilocplex.cpp:(.text+0x3d58): undefined reference to `CPXchgcoef'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setBounds(int*, double, double)':
+ilocplex.cpp:(.text+0x3e35): undefined reference to `CPXchgbds'
+ilocplex.cpp:(.text+0x3e64): undefined reference to `CPXchgbds'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setObjQuadCoef(double, int*, int*)':
+ilocplex.cpp:(.text+0x3f8e): undefined reference to `CPXchgqpcoef'
+ilocplex.cpp:(.text+0x3fd2): undefined reference to `CPXgetnumquad'
+ilocplex.cpp:(.text+0x3ff4): undefined reference to `CPXchgqpcoef'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setObjCoef(double, int*)':
+ilocplex.cpp:(.text+0x4090): undefined reference to `CPXchgobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::copyQ(int const*, int const*, int const*, double const*)':
+ilocplex.cpp:(.text+0x40f4): undefined reference to `CPXcopyquad'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::init()':
+ilocplex.cpp:(.text+0x4169): undefined reference to `CPXcreateprob'
+ilocplex.cpp:(.text+0x418a): undefined reference to `CPXEgetCache'
+ilocplex.cpp:(.text+0x41b2): undefined reference to `CPXsetintparam'
+ilocplex.cpp:(.text+0x41fe): undefined reference to `CPXgetchannels'
+ilocplex.cpp:(.text+0x421b): undefined reference to `CPXdisconnectchannel'
+ilocplex.cpp:(.text+0x422c): undefined reference to `CPXdisconnectchannel'
+ilocplex.cpp:(.text+0x423d): undefined reference to `CPXdisconnectchannel'
+ilocplex.cpp:(.text+0x424e): undefined reference to `CPXdisconnectchannel'
+ilocplex.cpp:(.text+0x4269): undefined reference to `CPXaddfuncdest'
+ilocplex.cpp:(.text+0x4290): undefined reference to `CPXaddfuncdest'
+ilocplex.cpp:(.text+0x42b7): undefined reference to `CPXaddfuncdest'
+ilocplex.cpp:(.text+0x42de): undefined reference to `CPXaddfuncdest'
+ilocplex.cpp:(.text+0x431c): undefined reference to `CPXEsetnamefunctions'
+ilocplex.cpp:(.text+0x4358): undefined reference to `CPXcloseCPLEX'
+ilocplex.cpp:(.text+0x4378): undefined reference to `CPXcloseCPLEX'
+ilocplex.cpp:(.text+0x4398): undefined reference to `CPXcloseCPLEX'
+ilocplex.cpp:(.text+0x43b8): undefined reference to `CPXcloseCPLEX'
+ilocplex.cpp:(.text+0x43d8): undefined reference to `CPXcloseCPLEX'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o):ilocplex.cpp:(.text+0x43f8): more undefined references to `CPXcloseCPLEX' follow
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::init()':
+ilocplex.cpp:(.text+0x4444): undefined reference to `CPXopenCPLEX'
+ilocplex.cpp:(.text+0x4462): undefined reference to `CPXgeterrorstring'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateRowStatus() const':
+ilocplex.cpp:(.text+0x4cc8): undefined reference to `CPXgetbase'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::unflushOrder()':
+ilocplex.cpp:(.text+0x6261): undefined reference to `CPXgetorder'
+ilocplex.cpp:(.text+0x63b1): undefined reference to `CPXgetorder'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::changeSetVar(int*, IloIntSetVarI const*)':
+ilocplex.cpp:(.text+0x6731): undefined reference to `CPXEchgsetvar'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateColumnStatus() const':
+ilocplex.cpp:(.text+0x6b48): undefined reference to `CPXgetbase'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateDj() const':
+ilocplex.cpp:(.text+0x6d9b): undefined reference to `CPXgetdj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validatePi() const':
+ilocplex.cpp:(.text+0x6e9b): undefined reference to `CPXgetpi'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateSolnPoolQCSlack(long) const':
+ilocplex.cpp:(.text+0x6fb7): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x6ffd): undefined reference to `CPXgetsolnpoolqconstrslack'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateQCSlack() const':
+ilocplex.cpp:(.text+0x710b): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x7149): undefined reference to `CPXgetqconstrslack'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateSolnPoolSlack(long) const':
+ilocplex.cpp:(.text+0x722f): undefined reference to `CPXgetsolnpoolslack'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateSlack() const':
+ilocplex.cpp:(.text+0x736b): undefined reference to `CPXgetslack'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateSolnPoolX(long) const':
+ilocplex.cpp:(.text+0x744f): undefined reference to `CPXgetsolnpoolx'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateX() const':
+ilocplex.cpp:(.text+0x76ab): undefined reference to `CPXgetx'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateUb() const':
+ilocplex.cpp:(.text+0x77ab): undefined reference to `CPXgetub'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::validateLb() const':
+ilocplex.cpp:(.text+0x78ab): undefined reference to `CPXgetlb'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::fixQCs()':
+ilocplex.cpp:(.text+0x79a7): undefined reference to `CPXdelqconstrs'
+ilocplex.cpp:(.text+0x7a39): undefined reference to `CPXaddrows'
+ilocplex.cpp:(.text+0x7b18): undefined reference to `CPXgetqconstr'
+ilocplex.cpp:(.text+0x7c80): undefined reference to `CPXgetqconstr'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setObjCoefs(IloNumArray const&, IloArray<int*> const&)':
+ilocplex.cpp:(.text+0x7f0d): undefined reference to `CPXchgobj'
+ilocplex.cpp:(.text+0x7f34): undefined reference to `CPXchgobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::qpIndefCertificate(IloExtractableArray&, IloNumArray&)':
+ilocplex.cpp:(.text+0x87c0): undefined reference to `CPXqpindefcertificate'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::dualFarkas(IloExtractableArray&, IloNumArray&)':
+ilocplex.cpp:(.text+0x89e2): undefined reference to `CPXdualfarkas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getIntSetValue(IloIntSetVarI const*, IloIntSet)':
+ilocplex.cpp:(.text+0x8e30): undefined reference to `CPXEgetsetvarvalues'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::flushOrder()':
+ilocplex.cpp:(.text+0xc2b7): undefined reference to `CPXcopyorder'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::flushSOS()':
+ilocplex.cpp:(.text+0xc7b6): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0xca7a): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0xcb56): undefined reference to `CPXcopysos'
+ilocplex.cpp:(.text+0xcbb8): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0xcc15): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0xcc76): undefined reference to `CPXcopysos'
+ilocplex.cpp:(.text+0xccc2): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0xccee): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0xcd17): undefined reference to `CPXchgprobtype'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getPnorms(IloNumArray&, IloIntVarArray const&, IloNumArray&, IloRangeArray const&) const':
+ilocplex.cpp:(.text+0xd083): undefined reference to `CPXgetpnorms'
+ilocplex.cpp:(.text+0xd1fb): undefined reference to `CPXgetpnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getPnorms(IloNumArray&, IloNumVarArray const&, IloNumArray&, IloRangeArray const&) const':
+ilocplex.cpp:(.text+0xd4f5): undefined reference to `CPXgetpnorms'
+ilocplex.cpp:(.text+0xd67d): undefined reference to `CPXgetpnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getIIS(IloArray<IloCplex::IISStatus>&, IloNumVarArray&, IloArray<IloCplex::IISStatus>&, IloConstraintArray&) const':
+ilocplex.cpp:(.text+0xd949): undefined reference to `CPXfindiis'
+ilocplex.cpp:(.text+0xd9fa): undefined reference to `CPXgetiis'
+ilocplex.cpp:(.text+0xdadf): undefined reference to `CPXgetiis'
+ilocplex.cpp:(.text+0xdc1c): undefined reference to `CPXgetiis'
+ilocplex.cpp:(.text+0xdd01): undefined reference to `CPXgetiis'
+ilocplex.cpp:(.text+0xdec5): undefined reference to `CPXlpopt'
+ilocplex.cpp:(.text+0xdefb): undefined reference to `CPXfindiis'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getBds(IloForAllRangeI*, double&, double&) const':
+ilocplex.cpp:(.text+0xe072): undefined reference to `CPXgetsense'
+ilocplex.cpp:(.text+0xe098): undefined reference to `CPXgetrhs'
+ilocplex.cpp:(.text+0xe171): undefined reference to `CPXgetcoef'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getQuality(IloCplex::Quality, long, int*&, int*&, int*&) const':
+ilocplex.cpp:(.text+0xe2c4): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe33e): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe378): undefined reference to `CPXgetsolnpoolintquality'
+ilocplex.cpp:(.text+0xe39e): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe3c7): undefined reference to `CPXgetsolnpoolintquality'
+ilocplex.cpp:(.text+0xe3f0): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe419): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe470): undefined reference to `CPXgetsolnpoolintquality'
+ilocplex.cpp:(.text+0xe496): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe4bf): undefined reference to `CPXgetsolnpoolintquality'
+ilocplex.cpp:(.text+0xe4e8): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe573): undefined reference to `CPXgetdblquality'
+ilocplex.cpp:(.text+0xe5b1): undefined reference to `CPXgetsolnpoolintquality'
+ilocplex.cpp:(.text+0xe630): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe65b): undefined reference to `CPXgetsolnpoolintquality'
+ilocplex.cpp:(.text+0xe681): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe6aa): undefined reference to `CPXgetsolnpoolintquality'
+ilocplex.cpp:(.text+0xe6d3): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe708): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe72e): undefined reference to `CPXgetsolnpoolintquality'
+ilocplex.cpp:(.text+0xe81c): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe85f): undefined reference to `CPXgetsolnpooldblquality'
+ilocplex.cpp:(.text+0xe898): undefined reference to `CPXgetsolnpooldblquality'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setVectors(IloNumArray, IloNumArray, IloIntVarArray, IloNumArray, IloNumArray, IloRangeArray)':
+ilocplex.cpp:(.text+0xf0d9): undefined reference to `CPXcopystart'
+ilocplex.cpp:(.text+0xf185): undefined reference to `CPXchgmipstart'
+ilocplex.cpp:(.text+0xf54c): undefined reference to `CPXcopystart'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getStrongBranch(IloExtractableArray const&, IloNumArray&, IloNumArray&, long long) const':
+ilocplex.cpp:(.text+0xfc5f): undefined reference to `CPXSstrongbranch'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDriebeekPenalties(IloExtractableArray const&, IloNumArray&, IloNumArray&) const':
+ilocplex.cpp:(.text+0x1005a): undefined reference to `CPXmdleave'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::presolve(IloCplex::Algorithm)':
+ilocplex.cpp:(.text+0x10326): undefined reference to `CPXpresolve'
+ilocplex.cpp:(.text+0x10354): undefined reference to `CPXpresolve'
+ilocplex.cpp:(.text+0x1038c): undefined reference to `CPXpresolve'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDiverging() const':
+ilocplex.cpp:(.text+0x103cd): undefined reference to `CPXgetijdiv'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getObjSA(IloNumArray, IloNumArray, IloIntVarArray) const':
+ilocplex.cpp:(.text+0x104e8): undefined reference to `CPXobjsa'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getRHSSA(IloNumArray, IloNumArray, IloRangeArray) const':
+ilocplex.cpp:(.text+0x108c8): undefined reference to `CPXrhssa'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getBoundSA(IloNumArray, IloNumArray, IloNumArray, IloNumArray, IloIntVarArray) const':
+ilocplex.cpp:(.text+0x10d1e): undefined reference to `CPXboundsa'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getQCAX(int*) const':
+ilocplex.cpp:(.text+0x11303): undefined reference to `CPXgetxqxax'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getAX(int*) const':
+ilocplex.cpp:(.text+0x11363): undefined reference to `CPXgetax'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNcuts(IloCplex::CutType) const':
+ilocplex.cpp:(.text+0x11597): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x115d6): undefined reference to `CPXgetnumcuts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNnodesLeft() const':
+ilocplex.cpp:(.text+0x11618): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x11641): undefined reference to `CPXSgetnodeleftcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNnodes() const':
+ilocplex.cpp:(.text+0x11668): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x11691): undefined reference to `CPXSgetnodecnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNdualSuperbasics() const':
+ilocplex.cpp:(.text+0x116b8): undefined reference to `CPXgetdsbcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNprimalSuperbasics() const':
+ilocplex.cpp:(.text+0x116d8): undefined reference to `CPXgetpsbcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNphaseOneIterations() const':
+ilocplex.cpp:(.text+0x116f8): undefined reference to `CPXgetphase1cnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getIncumbentNode() const':
+ilocplex.cpp:(.text+0x11718): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x11741): undefined reference to `CPXgetnodeint'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getCutoff() const':
+ilocplex.cpp:(.text+0x1176c): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x117c4): undefined reference to `CPXgetcutoff'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getMIPRelativeGap() const':
+ilocplex.cpp:(.text+0x1181c): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x11864): undefined reference to `CPXgetmiprelgap'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getBestObjValue() const':
+ilocplex.cpp:(.text+0x118ac): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x11904): undefined reference to `CPXgetbestobjval'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getObjValue(long) const':
+ilocplex.cpp:(.text+0x1196f): undefined reference to `CPXgetsolnpoolobjval'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getObjValue() const':
+ilocplex.cpp:(.text+0x11a41): undefined reference to `CPXgetobjval'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setCoef(double, int*, int*)':
+ilocplex.cpp:(.text+0x11abd): undefined reference to `CPXchgcoef'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getRowCoefs(int*, IloNumArray&, IloArray<int*> const&) const':
+ilocplex.cpp:(.text+0x11c5a): undefined reference to `CPXgetcoef'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getCoef(int*, int*) const':
+ilocplex.cpp:(.text+0x11ceb): undefined reference to `CPXgetcoef'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::removeGC(int*, int)':
+ilocplex.cpp:(.text+0x11d58): undefined reference to `CPXEdelgconstrs'
+ilocplex.cpp:(.text+0x11deb): undefined reference to `CPXgetprobtype'
+ilocplex.cpp:(.text+0x11e1e): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0x11e53): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0x11e75): undefined reference to `CPXchgprobtype'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::removeQC(int*)':
+ilocplex.cpp:(.text+0x120dd): undefined reference to `CPXdelqconstrs'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::removeRow(int*)':
+ilocplex.cpp:(.text+0x12274): undefined reference to `CPXdelrows'
+ilocplex.cpp:(.text+0x122ab): undefined reference to `CPXEcangetbase'
+ilocplex.cpp:(.text+0x122cc): undefined reference to `CPXpivotin'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::removeColumn(int*)':
+ilocplex.cpp:(.text+0x1235c): undefined reference to `CPXdelcols'
+ilocplex.cpp:(.text+0x123a4): undefined reference to `CPXEcangetbase'
+ilocplex.cpp:(.text+0x123db): undefined reference to `CPXchgbds'
+ilocplex.cpp:(.text+0x12404): undefined reference to `CPXchgbds'
+ilocplex.cpp:(.text+0x12423): undefined reference to `CPXpivotout'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getAlgorithm() const':
+ilocplex.cpp:(.text+0x124b8): undefined reference to `CPXgetmethod'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::isDualFeasible() const':
+ilocplex.cpp:(.text+0x12548): undefined reference to `CPXsolninfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::isPrimalFeasible() const':
+ilocplex.cpp:(.text+0x12598): undefined reference to `CPXsolninfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getCplexSubStatus() const':
+ilocplex.cpp:(.text+0x125ef): undefined reference to `CPXgetsubstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::solveFixed(long)':
+ilocplex.cpp:(.text+0x126d3): undefined reference to `CPXchgprobtypesolnpool'
+ilocplex.cpp:(.text+0x126fc): undefined reference to `CPXchgprobtypesolnpool'
+ilocplex.cpp:(.text+0x1277e): undefined reference to `CPXfree'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNNZs() const':
+ilocplex.cpp:(.text+0x127f8): undefined reference to `CPXSgetnumnz'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNiterations() const':
+ilocplex.cpp:(.text+0x1289f): undefined reference to `CPXSgetsiftitcnt'
+ilocplex.cpp:(.text+0x128b9): undefined reference to `CPXSgetbaritcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setBasisStatuses(IloArray<IloCplex::BasisStatus>, IloIntVarArray, IloArray<IloCplex::BasisStatus>, IloConstraintArray)':
+ilocplex.cpp:(.text+0x12d71): undefined reference to `CPXEcangetbase'
+ilocplex.cpp:(.text+0x12f90): undefined reference to `CPXcopybase'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setBasisStatuses(IloArray<IloCplex::BasisStatus>, IloNumVarArray, IloArray<IloCplex::BasisStatus>, IloConstraintArray)':
+ilocplex.cpp:(.text+0x13140): undefined reference to `CPXEcangetbase'
+ilocplex.cpp:(.text+0x1337b): undefined reference to `CPXcopybase'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getInfeasibilities(IloNumArray, IloNumVarArray) const':
+ilocplex.cpp:(.text+0x1358a): undefined reference to `CPXgetcolinfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getAX(IloNumArray, IloRangeArray) const':
+ilocplex.cpp:(.text+0x13970): undefined reference to `CPXgetax'
+ilocplex.cpp:(.text+0x13c30): undefined reference to `CPXgetxqxax'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getColInfeasibility(int*) const':
+ilocplex.cpp:(.text+0x13e5d): undefined reference to `CPXgetcolinfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getIndInfeasibility(int*) const':
+ilocplex.cpp:(.text+0x13f1d): undefined reference to `CPXgetindconstrinfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getSOSInfeasibility(int*) const':
+ilocplex.cpp:(.text+0x13f6d): undefined reference to `CPXgetsosinfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getQCInfeasibility(int*) const':
+ilocplex.cpp:(.text+0x13fbd): undefined reference to `CPXgetqconstrinfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getRowInfeasibility(int*) const':
+ilocplex.cpp:(.text+0x1400d): undefined reference to `CPXgetrowinfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setVectors(IloNumArray, IloNumArray, IloNumVarArray, IloNumArray, IloNumArray, IloRangeArray)':
+ilocplex.cpp:(.text+0x14a6e): undefined reference to `CPXchgmipstart'
+ilocplex.cpp:(.text+0x14c3e): undefined reference to `CPXcopystart'
+ilocplex.cpp:(.text+0x15160): undefined reference to `CPXcopystart'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::extractParameterSet(IloCplex::ParameterSetI*)':
+ilocplex.cpp:(.text+0x16be2): undefined reference to `CPXgetchgparam'
+ilocplex.cpp:(.text+0x16c58): undefined reference to `CPXgetparamtype'
+ilocplex.cpp:(.text+0x16c9c): undefined reference to `CPXinfolongparam'
+ilocplex.cpp:(.text+0x16cbe): undefined reference to `CPXgetlongparam'
+ilocplex.cpp:(.text+0x16dca): undefined reference to `CPXinfodblparam'
+ilocplex.cpp:(.text+0x16dec): undefined reference to `CPXgetdblparam'
+ilocplex.cpp:(.text+0x16eb5): undefined reference to `CPXinfointparam'
+ilocplex.cpp:(.text+0x16eda): undefined reference to `CPXgetintparam'
+ilocplex.cpp:(.text+0x17022): undefined reference to `CPXgetstrparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setBounds(IloArray<int*> const&, IloNumArray const&, IloNumArray const&)':
+ilocplex.cpp:(.text+0x1821e): undefined reference to `CPXchgbds'
+ilocplex.cpp:(.text+0x18261): undefined reference to `CPXchgbds'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setRange(IloArray<int*> const&, IloNumArray const&, IloNumArray const&)':
+ilocplex.cpp:(.text+0x18917): undefined reference to `CPXchgsense'
+ilocplex.cpp:(.text+0x18943): undefined reference to `CPXchgrhs'
+ilocplex.cpp:(.text+0x1896c): undefined reference to `CPXchgrngval'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDnorms(IloNumArray&, IloIntVarArray const&, IloRangeArray const&) const':
+ilocplex.cpp:(.text+0x18e10): undefined reference to `CPXgetdnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addLazyConstraints(IloConstraintArray)':
+ilocplex.cpp:(.text+0x1951e): undefined reference to `CPXgetrows'
+ilocplex.cpp:(.text+0x19741): undefined reference to `CPXgetrows'
+ilocplex.cpp:(.text+0x19774): undefined reference to `CPXgetsense'
+ilocplex.cpp:(.text+0x197a3): undefined reference to `CPXgetrhs'
+ilocplex.cpp:(.text+0x19c38): undefined reference to `CPXgetrngval'
+ilocplex.cpp:(.text+0x19d6d): undefined reference to `CPXaddlazyconstraints'
+ilocplex.cpp:(.text+0x19d90): undefined reference to `CPXdelrows'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDnorms(IloNumArray&, IloNumVarArray const&, IloRangeArray const&) const':
+ilocplex.cpp:(.text+0x1a664): undefined reference to `CPXgetdnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getConflict(IloArray<IloCplex::ConflictStatus>&, IloNumVarArray&, IloArray<IloCplex::ConflictStatus>&, IloConstraintArray&)':
+ilocplex.cpp:(.text+0x1b22f): undefined reference to `CPXgetconflict'
+ilocplex.cpp:(.text+0x1b51d): undefined reference to `CPXgetconflict'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setObj(int, IloCarray<double> const&, IloCarray<int*> const&)':
+ilocplex.cpp:(.text+0x1c40f): undefined reference to `CPXchgobjsen'
+ilocplex.cpp:(.text+0x1c4ce): undefined reference to `CPXchgobj'
+ilocplex.cpp:(.text+0x1c617): undefined reference to `CPXchgobj'
+ilocplex.cpp:(.text+0x1c646): undefined reference to `CPXchgobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getLinearObj(IloNumArray&, IloNumVarArray) const':
+ilocplex.cpp:(.text+0x1c8d0): undefined reference to `CPXgetobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getObj(IloNumArray&, IloArray<int*>&) const':
+ilocplex.cpp:(.text+0x1cc60): undefined reference to `CPXgetobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setObj(int, IloNumArray const&, IloArray<int*> const&)':
+ilocplex.cpp:(.text+0x1cf6f): undefined reference to `CPXchgobjsen'
+ilocplex.cpp:(.text+0x1d02e): undefined reference to `CPXchgobj'
+ilocplex.cpp:(.text+0x1d1c5): undefined reference to `CPXchgobj'
+ilocplex.cpp:(.text+0x1d1f0): undefined reference to `CPXchgobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::clear()':
+ilocplex.cpp:(.text+0x1d728): undefined reference to `CPXfreeprob'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::~IloCplexI()':
+ilocplex.cpp:(.text+0x1d815): undefined reference to `CPXfreeprob'
+ilocplex.cpp:(.text+0x1d821): undefined reference to `CPXcloseCPLEX'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::~IloCplexI()':
+ilocplex.cpp:(.text+0x1e035): undefined reference to `CPXfreeprob'
+ilocplex.cpp:(.text+0x1e041): undefined reference to `CPXcloseCPLEX'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::~IloCplexI()':
+ilocplex.cpp:(.text+0x1e845): undefined reference to `CPXfreeprob'
+ilocplex.cpp:(.text+0x1e851): undefined reference to `CPXcloseCPLEX'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::tuneParam(IloArray<char const*>, IloCplex::ParameterSet)':
+ilocplex.cpp:(.text+0x1f8ab): undefined reference to `CPXtuneparamprobset'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::tuneParam(IloCplex::ParameterSet)':
+ilocplex.cpp:(.text+0x1fd34): undefined reference to `CPXtuneparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::feasOpt(IloConstraintArray, IloNumArray)':
+ilocplex.cpp:(.text+0x2022e): undefined reference to `CPXfeasoptext'
+ilocplex.cpp:(.text+0x20278): undefined reference to `CPXgetstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::populate()':
+ilocplex.cpp:(.text+0x2042f): undefined reference to `CPXpopulate'
+ilocplex.cpp:(.text+0x2046c): undefined reference to `CPXgetstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::solve()':
+ilocplex.cpp:(.text+0x2057a): undefined reference to `CPXlpopt'
+ilocplex.cpp:(.text+0x205a6): undefined reference to `CPXgetstat'
+ilocplex.cpp:(.text+0x2060a): undefined reference to `CPXgetintparam'
+ilocplex.cpp:(.text+0x20632): undefined reference to `CPXqpopt'
+ilocplex.cpp:(.text+0x2067e): undefined reference to `CPXmipopt'
+ilocplex.cpp:(.text+0x206b8): undefined reference to `CPXgetintparam'
+ilocplex.cpp:(.text+0x206ce): undefined reference to `CPXgetintparam'
+ilocplex.cpp:(.text+0x206f3): undefined reference to `CPXqpopt'
+ilocplex.cpp:(.text+0x20715): undefined reference to `CPXsetintparam'
+ilocplex.cpp:(.text+0x20730): undefined reference to `CPXgetintparam'
+ilocplex.cpp:(.text+0x20745): undefined reference to `CPXsetintparam'
+ilocplex.cpp:(.text+0x2076f): undefined reference to `CPXhybbaropt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::clearQ()':
+ilocplex.cpp:(.text+0x2086e): undefined reference to `CPXcopyquad'
+ilocplex.cpp:(.text+0x208ba): undefined reference to `CPXchgprobtype'
+ilocplex.cpp:(.text+0x208df): undefined reference to `CPXchgprobtype'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setPnorms(IloNumArray const&, IloIntVarArray const&, IloNumArray const&, IloRangeArray const&)':
+ilocplex.cpp:(.text+0x20b7b): undefined reference to `CPXgetpnorms'
+ilocplex.cpp:(.text+0x20d29): undefined reference to `CPXcopypnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setPnorms(IloNumArray const&, IloNumVarArray const&, IloNumArray const&, IloRangeArray const&)':
+ilocplex.cpp:(.text+0x20f2d): undefined reference to `CPXgetpnorms'
+ilocplex.cpp:(.text+0x210ec): undefined reference to `CPXcopypnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::basicPresolve(IloIntVarArray, IloNumArray, IloNumArray, IloRangeArray, IloBoolArray) const':
+ilocplex.cpp:(.text+0x21371): undefined reference to `CPXbasicpresolve'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::refineMIPStartConflict(long, IloConstraintArray, IloNumArray)':
+ilocplex.cpp:(.text+0x21c4b): undefined reference to `CPXEisort'
+ilocplex.cpp:(.text+0x21c58): undefined reference to `CPXEinsort'
+ilocplex.cpp:(.text+0x21ef5): undefined reference to `CPXrefinemipstartconflictext'
+ilocplex.cpp:(.text+0x21f33): undefined reference to `CPXgetstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::basicPresolve(IloNumVarArray, IloNumArray, IloNumArray, IloRangeArray, IloBoolArray) const':
+ilocplex.cpp:(.text+0x222e1): undefined reference to `CPXbasicpresolve'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::refineConflict(IloConstraintArray, IloNumArray)':
+ilocplex.cpp:(.text+0x22b65): undefined reference to `CPXEisort'
+ilocplex.cpp:(.text+0x22b72): undefined reference to `CPXEinsort'
+ilocplex.cpp:(.text+0x22dfd): undefined reference to `CPXrefineconflictext'
+ilocplex.cpp:(.text+0x22e3b): undefined reference to `CPXgetstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::removeColumns(IloArray<int*> const&)':
+ilocplex.cpp:(.text+0x23636): undefined reference to `CPXdelsetcols'
+ilocplex.cpp:(.text+0x236bf): undefined reference to `CPXEcangetbase'
+ilocplex.cpp:(.text+0x23881): undefined reference to `CPXchgbds'
+ilocplex.cpp:(.text+0x23915): undefined reference to `CPXchgbds'
+ilocplex.cpp:(.text+0x23933): undefined reference to `CPXpivotout'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addUserCuts(IloConstraintArray)':
+ilocplex.cpp:(.text+0x23bd8): undefined reference to `CPXgetrows'
+ilocplex.cpp:(.text+0x23de6): undefined reference to `CPXgetrows'
+ilocplex.cpp:(.text+0x23e20): undefined reference to `CPXgetsense'
+ilocplex.cpp:(.text+0x23e56): undefined reference to `CPXgetrhs'
+ilocplex.cpp:(.text+0x2427a): undefined reference to `CPXaddusercuts'
+ilocplex.cpp:(.text+0x242a2): undefined reference to `CPXdelrows'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::removeRows(IloArray<int*> const&)':
+ilocplex.cpp:(.text+0x2696c): undefined reference to `CPXdelsetrows'
+ilocplex.cpp:(.text+0x269b5): undefined reference to `CPXEcangetbase'
+ilocplex.cpp:(.text+0x26a97): undefined reference to `CPXpivotin'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getInfeasibility(IloConstraintI*, double*) const':
+ilocplex.cpp:(.text+0x28163): undefined reference to `CPXgetrowinfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getRay(IloNumArray&, IloNumVarArray&) const':
+ilocplex.cpp:(.text+0x28317): undefined reference to `CPXgetray'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addQC(IloExtractableI const*, IloCarray<double> const&, IloCarray<int*> const&, IloCarray<double> const&, IloCarray<int*> const&, IloCarray<int*> const&, int, double)':
+ilocplex.cpp:(.text+0x2882b): undefined reference to `CPXaddqconstr'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getInfeasibilities(IloNumArray, IloConstraintArray) const':
+ilocplex.cpp:(.text+0x28c43): undefined reference to `CPXgetrowinfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarNEqCst(IloExtractableI const*, int*, IloIntArray)':
+ilocplex.cpp:(.text+0x29054): undefined reference to `CPXEaddsetvarneqcst'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarNEq(IloExtractableI const*, int*, int*)':
+ilocplex.cpp:(.text+0x290d2): undefined reference to `CPXEaddsetvarneq'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarEq(IloExtractableI const*, int*, int*)':
+ilocplex.cpp:(.text+0x29122): undefined reference to `CPXEaddsetvareq'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarNullIntersect(IloExtractableI const*, int*, int*)':
+ilocplex.cpp:(.text+0x29172): undefined reference to `CPXEaddsetvarnullintersect'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarIntersection(IloExtractableI const*, int*, int*, int*)':
+ilocplex.cpp:(.text+0x291c5): undefined reference to `CPXEaddsetvarintersection'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarUnion(IloExtractableI const*, int*, int*, int*)':
+ilocplex.cpp:(.text+0x29215): undefined reference to `CPXEaddsetvarunion'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarDomain(IloExtractableI const*, int*, IloIntArray, int, int, int, int)':
+ilocplex.cpp:(.text+0x29316): undefined reference to `CPXEaddsetvardomain'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarSubset(IloExtractableI const*, int*, int*, int)':
+ilocplex.cpp:(.text+0x29392): undefined reference to `CPXEaddsetvarsubset'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarMax(IloExtractableI const*, int*, int*, IloIntArray)':
+ilocplex.cpp:(.text+0x29472): undefined reference to `CPXEaddsetvarmax'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarMin(IloExtractableI const*, int*, int*, IloIntArray)':
+ilocplex.cpp:(.text+0x29582): undefined reference to `CPXEaddsetvarmin'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarMember(IloExtractableI const*, int*, int*, double)':
+ilocplex.cpp:(.text+0x29602): undefined reference to `CPXEaddsetvarmember'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarCard(IloExtractableI const*, int*, int*)':
+ilocplex.cpp:(.text+0x29652): undefined reference to `CPXEaddsetvarcard'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVar(IloIntSetVarI const*)':
+ilocplex.cpp:(.text+0x297e9): undefined reference to `CPXEaddsetvar'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addIndicator(IloExtractableI const*, int*, double, int, IloCarray<int*> const&, IloCarray<double> const&)':
+ilocplex.cpp:(.text+0x299b3): undefined reference to `CPXEaddindconstr'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addPWL(IloExtractableI const*, int*, IloNumArray const&, IloNumArray const&, double, double, int*, char const*)':
+ilocplex.cpp:(.text+0x29be7): undefined reference to `CPXEaddpwl'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addMax(IloExtractableI const*, int*, IloCarray<int*> const&, double, char const*)':
+ilocplex.cpp:(.text+0x29e00): undefined reference to `CPXEaddmaxexpr'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addMin(IloExtractableI const*, int*, IloCarray<int*> const&, double, char const*)':
+ilocplex.cpp:(.text+0x2a0b0): undefined reference to `CPXEaddminexpr'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addAbs(IloExtractableI const*, int*, int*, char const*)':
+ilocplex.cpp:(.text+0x2a247): undefined reference to `CPXEaddabs'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setRowCoefs(int*, IloNumArray const&, IloArray<int*> const&)':
+ilocplex.cpp:(.text+0x2a584): undefined reference to `CPXchgcoeflist'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getBoundSA(IloNumArray, IloNumArray, IloNumArray, IloNumArray, IloNumVarArray) const':
+ilocplex.cpp:(.text+0x2a824): undefined reference to `CPXboundsa'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getRow(int*, IloNumArray&, IloArray<int*>&) const':
+ilocplex.cpp:(.text+0x2af73): undefined reference to `CPXgetrows'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::feasOpt(IloRangeArray, IloNumArray, IloNumArray, IloNumVarArray, IloNumArray, IloNumArray)':
+ilocplex.cpp:(.text+0x2b3ff): undefined reference to `CPXgetsense'
+ilocplex.cpp:(.text+0x2b839): undefined reference to `CPXgetqconstr'
+ilocplex.cpp:(.text+0x2bcf6): undefined reference to `CPXchgsense'
+ilocplex.cpp:(.text+0x2bd28): undefined reference to `CPXchgrngval'
+ilocplex.cpp:(.text+0x2c05f): undefined reference to `CPXEfeasopt'
+ilocplex.cpp:(.text+0x2c0a3): undefined reference to `CPXgetstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getObjCoefs(IloNumArray&, IloArray<int*> const&) const':
+ilocplex.cpp:(.text+0x2c860): undefined reference to `CPXgetobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setDnorms(IloNumArray const&, IloNumVarArray const&, IloRangeArray const&)':
+ilocplex.cpp:(.text+0x2cbea): undefined reference to `CPXgetdnorms'
+ilocplex.cpp:(.text+0x2ceb0): undefined reference to `CPXcopydnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getRangeSA(IloNumArray, IloNumArray, IloNumArray, IloNumArray, IloRangeArray) const':
+ilocplex.cpp:(.text+0x2d399): undefined reference to `CPXErangesa'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getInfeasibilities(IloNumArray, IloIntVarArray) const':
+ilocplex.cpp:(.text+0x2da53): undefined reference to `CPXgetcolinfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getDualNorms(IloExprArray const&, IloNumArray&, IloCplex::DualPricing) const':
+ilocplex.cpp:(.text+0x2e272): undefined reference to `CPXgetweight'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::clearRow(int*)':
+ilocplex.cpp:(.text+0x2e681): undefined reference to `CPXgetrows'
+ilocplex.cpp:(.text+0x2e796): undefined reference to `CPXchgcoeflist'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::addSetVarSum(IloExtractableI const*, int*, int*, IloIntArray)':
+ilocplex.cpp:(.text+0x2ea8d): undefined reference to `CPXEaddsetvarsum'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getQuadraticObj(IloNumArray&, IloNumVarArray, IloNumVarArray) const':
+ilocplex.cpp:(.text+0x2ebba): undefined reference to `CPXgetquad'
+ilocplex.cpp:(.text+0x2ed79): undefined reference to `CPXgetquad'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setDnorms(IloNumArray const&, IloIntVarArray const&, IloRangeArray const&)':
+ilocplex.cpp:(.text+0x2f27a): undefined reference to `CPXgetdnorms'
+ilocplex.cpp:(.text+0x2f50f): undefined reference to `CPXcopydnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::feasOpt(IloRangeArray, IloNumArray, IloNumArray, IloIntVarArray, IloNumArray, IloNumArray)':
+ilocplex.cpp:(.text+0x2fa3f): undefined reference to `CPXgetsense'
+ilocplex.cpp:(.text+0x2fe75): undefined reference to `CPXgetqconstr'
+ilocplex.cpp:(.text+0x30336): undefined reference to `CPXchgsense'
+ilocplex.cpp:(.text+0x30368): undefined reference to `CPXchgrngval'
+ilocplex.cpp:(.text+0x30662): undefined reference to `CPXEfeasopt'
+ilocplex.cpp:(.text+0x306a6): undefined reference to `CPXgetstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getObjSA(IloNumArray, IloNumArray, IloNumVarArray) const':
+ilocplex.cpp:(.text+0x30e57): undefined reference to `CPXobjsa'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getAX(IloNumArray, IloArray<IloForAllRange>) const':
+ilocplex.cpp:(.text+0x312b0): undefined reference to `CPXgetax'
+ilocplex.cpp:(.text+0x31570): undefined reference to `CPXgetxqxax'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::deletePnorms()':
+ilocplex.cpp:(.text+0xad8): undefined reference to `CPXkillpnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::deleteDnorms()':
+ilocplex.cpp:(.text+0xae8): undefined reference to `CPXkilldnorms'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getObjSense() const':
+ilocplex.cpp:(.text+0xbef): undefined reference to `CPXgetobjsen'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getVersion() const':
+ilocplex.cpp:(.text+0xc68): undefined reference to `CPXversion'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getCplexNQCs() const':
+ilocplex.cpp:(.text+0xc7f): undefined reference to `CPXgetnumqconstrs'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getCplexNrows() const':
+ilocplex.cpp:(.text+0xc9f): undefined reference to `CPXgetnumrows'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getCplexNcols() const':
+ilocplex.cpp:(.text+0xcbf): undefined reference to `CPXgetnumcols'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::clearLazyConstraints()':
+ilocplex.cpp:(.text+0xd3f): undefined reference to `CPXfreelazyconstraints'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::clearUserCuts()':
+ilocplex.cpp:(.text+0xd5f): undefined reference to `CPXfreeusercuts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::setObjSense(int)':
+ilocplex.cpp:(.text+0x3f31): undefined reference to `CPXchgobjsen'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNcrossDExch() const':
+ilocplex.cpp:(.text+0x11509): undefined reference to `CPXSgetcrossdexchcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNcrossDPush() const':
+ilocplex.cpp:(.text+0x11529): undefined reference to `CPXSgetcrossdpushcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNcrossPExch() const':
+ilocplex.cpp:(.text+0x11549): undefined reference to `CPXSgetcrosspexchcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNcrossPPush() const':
+ilocplex.cpp:(.text+0x11569): undefined reference to `CPXSgetcrossppushcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getSubAlgorithm() const':
+ilocplex.cpp:(.text+0x12490): undefined reference to `CPXgetsubmethod'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNsiftingPhaseOneIterations() const':
+ilocplex.cpp:(.text+0x12819): undefined reference to `CPXSgetsiftphase1cnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNsiftingIterations() const':
+ilocplex.cpp:(.text+0x12839): undefined reference to `CPXSgetsiftitcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNbarrierIterations() const':
+ilocplex.cpp:(.text+0x12859): undefined reference to `CPXSgetbaritcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNiterations() const':
+ilocplex.cpp:(.text+0x12885): undefined reference to `CPXSgetmipitcnt'
+ilocplex.cpp:(.text+0x128d2): undefined reference to `CPXSgetitcnt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNsemiIntVars() const':
+ilocplex.cpp:(.text+0x128f9): undefined reference to `CPXgetnumsemiint'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNsemiContVars() const':
+ilocplex.cpp:(.text+0x12919): undefined reference to `CPXgetnumsemicont'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNbinVars() const':
+ilocplex.cpp:(.text+0x12939): undefined reference to `CPXgetnumbin'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `IloCplexI::getNintVars() const':
+ilocplex.cpp:(.text+0x12959): undefined reference to `CPXgetnumint'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `int (anonymous namespace)::implProtectVariables<IloIntVarArray>(IloCplexI*, IloIntVarArray const&, IloCarray<int>&, cpxenv*, cpxlp*)':
+ilocplex.cpp:(.text._ZN43_GLOBAL__N__Z27IloGetIloCplexVersionStringv20implProtectVariablesI14IloIntVarArrayEEiP9IloCplexIRKT_R9IloCarrayIiEP6cpxenvP5cpxlp[int (anonymous namespace)::implProtectVariables<IloIntVarArray>(IloCplexI*, IloIntVarArray const&, IloCarray<int>&, cpxenv*, cpxlp*)]+0x125): undefined reference to `CPXcopyprotected'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplex.o): In function `int (anonymous namespace)::implProtectVariables<IloNumVarArray>(IloCplexI*, IloNumVarArray const&, IloCarray<int>&, cpxenv*, cpxlp*)':
+ilocplex.cpp:(.text._ZN43_GLOBAL__N__Z27IloGetIloCplexVersionStringv20implProtectVariablesI14IloNumVarArrayEEiP9IloCplexIRKT_R9IloCarrayIiEP6cpxenvP5cpxlp[int (anonymous namespace)::implProtectVariables<IloNumVarArray>(IloCplexI*, IloNumVarArray const&, IloCarray<int>&, cpxenv*, cpxlp*)]+0x136): undefined reference to `CPXcopyprotected'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `netcallback':
+ilocpxcallback.cpp:(.text+0x6e5): undefined reference to `CPXEgetThreadNumber'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloSolveCallbackManager::isDualFeasible() const':
+ilocpxcallback.cpp:(.text+0xafc): undefined reference to `CPXsolninfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloSolveCallbackManager::isPrimalFeasible() const':
+ilocpxcallback.cpp:(.text+0xb3c): undefined reference to `CPXsolninfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloSolveCallbackManager::getCplexStatus() const':
+ilocpxcallback.cpp:(.text+0xb70): undefined reference to `CPXgetstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloSolveCallbackManager::getAlgorithmStatus() const':
+ilocpxcallback.cpp:(.text+0xbc0): undefined reference to `CPXsolninfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloSolveCallbackManager::solve(IloCplex::Algorithm)':
+ilocpxcallback.cpp:(.text+0xc5c): undefined reference to `CPXhybnetopt'
+ilocpxcallback.cpp:(.text+0xc6a): undefined reference to `CPXgetstat'
+ilocpxcallback.cpp:(.text+0xcb8): undefined reference to `CPXprimopt'
+ilocpxcallback.cpp:(.text+0xcca): undefined reference to `CPXhybbaropt'
+ilocpxcallback.cpp:(.text+0xcda): undefined reference to `CPXdualopt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::isDualFeasible() const':
+ilocpxcallback.cpp:(.text+0xd1c): undefined reference to `CPXsolninfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::isPrimalFeasible() const':
+ilocpxcallback.cpp:(.text+0xd5c): undefined reference to `CPXsolninfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::getCplexStatus() const':
+ilocpxcallback.cpp:(.text+0xd90): undefined reference to `CPXgetstat'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::getAlgorithmStatus() const':
+ilocpxcallback.cpp:(.text+0xde0): undefined reference to `CPXsolninfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::solve(IloCplex::Algorithm)':
+ilocpxcallback.cpp:(.text+0xe5f): undefined reference to `CPXhybnetopt'
+ilocpxcallback.cpp:(.text+0xe84): undefined reference to `CPXprimopt'
+ilocpxcallback.cpp:(.text+0xe96): undefined reference to `CPXhybbaropt'
+ilocpxcallback.cpp:(.text+0xea4): undefined reference to `CPXdualopt'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `tuningcallback':
+ilocpxcallback.cpp:(.text+0xee5): undefined reference to `CPXEgetThreadNumber'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `solvecallback':
+ilocpxcallback.cpp:(.text+0x1067): undefined reference to `CPXgetcallbackinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `heuristiccallback':
+ilocpxcallback.cpp:(.text+0x11ef): undefined reference to `CPXgetcallbackinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `nodecallback':
+ilocpxcallback.cpp:(.text+0x137f): undefined reference to `CPXgetcallbackinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `incumbentcallback':
+ilocpxcallback.cpp:(.text+0x1514): undefined reference to `CPXgetcallbackinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `lazyconstraintcallback':
+ilocpxcallback.cpp:(.text+0x1697): undefined reference to `CPXgetcallbackinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o):ilocpxcallback.cpp:(.text+0x1817): more undefined references to `CPXgetcallbackinfo' follow
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `lpcallback':
+ilocpxcallback.cpp:(.text+0x1d6e): undefined reference to `CPXEgetThreadNumber'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloCallbackManager::getInfo(int, void*) const':
+ilocpxcallback.cpp:(.text+0x2638): undefined reference to `CPXgetcallbackinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloOptimizationCallbackManager::getRedLP() const':
+ilocpxcallback.cpp:(.text+0x3386): undefined reference to `CPXgetredlp'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getObjValue() const':
+ilocpxcallback.cpp:(.text+0x33c9): undefined reference to `CPXgetcallbacknodeobjval'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getFeasibility(IloSOS1 const&) const':
+ilocpxcallback.cpp:(.text+0x3455): undefined reference to `CPXgetcallbacksosinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getSOSInfo(int, IloExtractable const&, void*) const':
+ilocpxcallback.cpp:(.text+0x34e2): undefined reference to `CPXgetcallbacksosinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::call(IloCplex::CallbackI*)':
+ilocpxcallback.cpp:(.text+0x3587): undefined reference to `CPXgetcallbacknodelp'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPCallbackManager::getSeqInfo(int, void*, IloCplex::MIPCallbackI::NodeId) const':
+ilocpxcallback.cpp:(.text+0x35f9): undefined reference to `CPXSgetcallbackseqinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPCallbackManager::getNodeInfo(int, void*, long long) const':
+ilocpxcallback.cpp:(.text+0x3889): undefined reference to `CPXSgetcallbacknodeinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `branchcallback':
+ilocpxcallback.cpp:(.text+0x3f01): undefined reference to `CPXgetcallbackinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPCallbackManager::getObjCoef(IloNumVar const&) const':
+ilocpxcallback.cpp:(.text+0x4253): undefined reference to `CPXgetobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::setSolution(IloIntVarArray const&, IloNumArray const&, double, long)':
+ilocpxcallback.cpp:(.text+0x42de): undefined reference to `CPXgetcallbacknodex'
+ilocpxcallback.cpp:(.text+0x43c7): undefined reference to `CPXEobjfromx'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPInfoCallbackManager::getIncumbentValue(IloNumVar const&) const':
+ilocpxcallback.cpp:(.text+0x4494): undefined reference to `CPXgetcallbackincumbent'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::setSolution(IloNumVarArray const&, IloNumArray const&, double, long)':
+ilocpxcallback.cpp:(.text+0x451e): undefined reference to `CPXgetcallbacknodex'
+ilocpxcallback.cpp:(.text+0x4627): undefined reference to `CPXEobjfromx'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloCplexCallbackManager::initCallbacks()':
+ilocpxcallback.cpp:(.text+0x53c1): undefined reference to `CPXsetlpcallbackfunc'
+ilocpxcallback.cpp:(.text+0x541d): undefined reference to `CPXsetnetcallbackfunc'
+ilocpxcallback.cpp:(.text+0x547d): undefined reference to `CPXsetmipcallbackfunc'
+ilocpxcallback.cpp:(.text+0x54dd): undefined reference to `CPXsetinfocallbackfunc'
+ilocpxcallback.cpp:(.text+0x5758): undefined reference to `CPXSsetdeletenodecallbackfunc'
+ilocpxcallback.cpp:(.text+0x57af): undefined reference to `CPXsetbranchcallbackfunc'
+ilocpxcallback.cpp:(.text+0x57d3): undefined reference to `CPXsetbranchnosolncallbackfunc'
+ilocpxcallback.cpp:(.text+0x57f7): undefined reference to `CPXsetintparam'
+ilocpxcallback.cpp:(.text+0x580e): undefined reference to `CPXsetintparam'
+ilocpxcallback.cpp:(.text+0x585b): undefined reference to `CPXsetincumbentcallbackfunc'
+ilocpxcallback.cpp:(.text+0x58b7): undefined reference to `CPXSsetnodecallbackfunc'
+ilocpxcallback.cpp:(.text+0x5913): undefined reference to `CPXsetheuristiccallbackfunc'
+ilocpxcallback.cpp:(.text+0x592c): undefined reference to `CPXsetintparam'
+ilocpxcallback.cpp:(.text+0x5988): undefined reference to `CPXsetsolvecallbackfunc'
+ilocpxcallback.cpp:(.text+0x59e4): undefined reference to `CPXsetusercutcallbackfunc'
+ilocpxcallback.cpp:(.text+0x5a40): undefined reference to `CPXsetlazyconstraintcallbackfunc'
+ilocpxcallback.cpp:(.text+0x5a9c): undefined reference to `CPXsettuningcallbackfunc'
+ilocpxcallback.cpp:(.text+0x5abb): undefined reference to `CPXEgetmaxthreads'
+ilocpxcallback.cpp:(.text+0x5d08): undefined reference to `CPXSsetdeletenodecallbackfunc'
+ilocpxcallback.cpp:(.text+0x5dcf): undefined reference to `CPXsetinfocallbackfunc'
+ilocpxcallback.cpp:(.text+0x5e82): undefined reference to `CPXsetmipcallbackfunc'
+ilocpxcallback.cpp:(.text+0x5f3b): undefined reference to `CPXsetlpcallbackfunc'
+ilocpxcallback.cpp:(.text+0x5f54): undefined reference to `CPXsetnetcallbackfunc'
+ilocpxcallback.cpp:(.text+0x5f6d): undefined reference to `CPXsettuningcallbackfunc'
+ilocpxcallback.cpp:(.text+0x5f86): undefined reference to `CPXsetlazyconstraintcallbackfunc'
+ilocpxcallback.cpp:(.text+0x5f9f): undefined reference to `CPXsetusercutcallbackfunc'
+ilocpxcallback.cpp:(.text+0x5fb8): undefined reference to `CPXsetsolvecallbackfunc'
+ilocpxcallback.cpp:(.text+0x5fd1): undefined reference to `CPXsetheuristiccallbackfunc'
+ilocpxcallback.cpp:(.text+0x5fec): undefined reference to `CPXSsetnodecallbackfunc'
+ilocpxcallback.cpp:(.text+0x6005): undefined reference to `CPXsetincumbentcallbackfunc'
+ilocpxcallback.cpp:(.text+0x603a): undefined reference to `CPXsetbranchcallbackfunc'
+ilocpxcallback.cpp:(.text+0x6054): undefined reference to `CPXsetbranchnosolncallbackfunc'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getUB(IloNumVar const&) const':
+ilocpxcallback.cpp:(.text+0x63b4): undefined reference to `CPXgetcallbacknodeub'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloBranchCallbackManager::makeBranch(IloNumVar const&, double, IloCplex::BranchDirection, double, IloCplex::MIPCallbackI::NodeData*)':
+ilocpxcallback.cpp:(.text+0x65d7): undefined reference to `CPXSbranchcallbackbranchbds'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getDownPseudoCost(IloNumVar const&) const':
+ilocpxcallback.cpp:(.text+0x6717): undefined reference to `CPXgetcallbackpseudocosts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getFeasibility(IloNumVar const&) const':
+ilocpxcallback.cpp:(.text+0x67b4): undefined reference to `CPXgetcallbacknodeintfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getUpPseudoCost(IloNumVar const&) const':
+ilocpxcallback.cpp:(.text+0x6888): undefined reference to `CPXgetcallbackpseudocosts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getValue(IloNumVar const&) const':
+ilocpxcallback.cpp:(.text+0x6934): undefined reference to `CPXgetcallbacknodex'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getFeasibility(IloSOS2 const&) const':
+ilocpxcallback.cpp:(.text+0x69c5): undefined reference to `CPXgetcallbacksosinfo'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getLB(IloNumVar const&) const':
+ilocpxcallback.cpp:(.text+0x6d54): undefined reference to `CPXgetcallbacknodelb'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getFeasibilities(IloArray<IloCplex::ControlCallbackI::IntegerFeasibility>&, IloIntVarArray const&) const':
+ilocpxcallback.cpp:(.text+0x72f2): undefined reference to `CPXgetcallbacknodeintfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPInfoCallbackManager::getIncumbentValue(IloNumExprI*) const':
+ilocpxcallback.cpp:(.text+0x76b7): undefined reference to `CPXgetcallbackincumbent'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getValue(IloNumExprI*) const':
+ilocpxcallback.cpp:(.text+0x7807): undefined reference to `CPXgetcallbacknodex'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getValues(IloNumArray&, IloIntVarArray const&) const':
+ilocpxcallback.cpp:(.text+0x8a44): undefined reference to `CPXgetcallbacknodex'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getValues(IloNumArray&, IloNumVarArray const&) const':
+ilocpxcallback.cpp:(.text+0x8d04): undefined reference to `CPXgetcallbacknodex'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getUBs(IloNumArray&, IloIntVarArray const&) const':
+ilocpxcallback.cpp:(.text+0x90d4): undefined reference to `CPXgetcallbacknodeub'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getUBs(IloNumArray&, IloNumVarArray const&) const':
+ilocpxcallback.cpp:(.text+0x94f5): undefined reference to `CPXgetcallbacknodeub'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getLBs(IloNumArray&, IloIntVarArray const&) const':
+ilocpxcallback.cpp:(.text+0x98f4): undefined reference to `CPXgetcallbacknodelb'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getLBs(IloNumArray&, IloNumVarArray const&) const':
+ilocpxcallback.cpp:(.text+0x9d15): undefined reference to `CPXgetcallbacknodelb'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::setBounds(IloNumVar const&, double, double)':
+ilocpxcallback.cpp:(.text+0xa009): undefined reference to `CPXgetprestat'
+ilocpxcallback.cpp:(.text+0xa0a9): undefined reference to `CPXchgbds'
+ilocpxcallback.cpp:(.text+0xa0d0): undefined reference to `CPXchgbds'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPInfoCallbackManager::getIncumbentValues(IloNumArray&, IloIntVarArray const&) const':
+ilocpxcallback.cpp:(.text+0xa364): undefined reference to `CPXgetcallbackincumbent'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPInfoCallbackManager::getIncumbentValues(IloNumArray&, IloNumVarArray const&) const':
+ilocpxcallback.cpp:(.text+0xa604): undefined reference to `CPXgetcallbackincumbent'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloSolveCallbackManager::setVectors(IloNumArray const&, IloIntVarArray const&, IloNumArray const&, IloRangeArray const&)':
+ilocpxcallback.cpp:(.text+0xa8b4): undefined reference to `CPXgetnumcols'
+ilocpxcallback.cpp:(.text+0xa8c7): undefined reference to `CPXgetnumrows'
+ilocpxcallback.cpp:(.text+0xac0b): undefined reference to `CPXcopystart'
+ilocpxcallback.cpp:(.text+0xac73): undefined reference to `CPXgetnumcols'
+ilocpxcallback.cpp:(.text+0xaca9): undefined reference to `CPXcrushx'
+ilocpxcallback.cpp:(.text+0xacd1): undefined reference to `CPXgetnumrows'
+ilocpxcallback.cpp:(.text+0xad07): undefined reference to `CPXcrushpi'
+ilocpxcallback.cpp:(.text+0xad76): undefined reference to `CPXcopystart'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getFeasibilities(IloArray<IloCplex::ControlCallbackI::IntegerFeasibility>&, IloNumVarArray const&) const':
+ilocpxcallback.cpp:(.text+0xb0d3): undefined reference to `CPXgetcallbacknodeintfeas'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloSolveCallbackManager::setVectors(IloNumArray const&, IloNumVarArray const&, IloNumArray const&, IloRangeArray const&)':
+ilocpxcallback.cpp:(.text+0xb4a4): undefined reference to `CPXgetnumcols'
+ilocpxcallback.cpp:(.text+0xb4b7): undefined reference to `CPXgetnumrows'
+ilocpxcallback.cpp:(.text+0xb81b): undefined reference to `CPXcopystart'
+ilocpxcallback.cpp:(.text+0xb884): undefined reference to `CPXgetnumcols'
+ilocpxcallback.cpp:(.text+0xb8ba): undefined reference to `CPXcrushx'
+ilocpxcallback.cpp:(.text+0xb8e2): undefined reference to `CPXgetnumrows'
+ilocpxcallback.cpp:(.text+0xb918): undefined reference to `CPXcrushpi'
+ilocpxcallback.cpp:(.text+0xb986): undefined reference to `CPXcopystart'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloBranchCallbackManager::getBranch(IloRangeArray&, long) const':
+ilocpxcallback.cpp:(.text+0xbbe0): undefined reference to `CPXgetcallbackbranchconstraints'
+ilocpxcallback.cpp:(.text+0xbd75): undefined reference to `CPXgetcallbackbranchconstraints'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloIncumbentCallbackManager::getSlacks(IloNumArray&, IloRangeArray const&) const':
+ilocpxcallback.cpp:(.text+0xc35c): undefined reference to `CPXslackfromx'
+ilocpxcallback.cpp:(.text+0xc3bc): undefined reference to `CPXqconstrslackfromx'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPCallbackManager::getObjCoefs(IloNumArray&, IloIntVarArray const&) const':
+ilocpxcallback.cpp:(.text+0xc84c): undefined reference to `CPXgetobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPInfoCallbackManager::getIncumbentSlacks(IloNumArray&, IloRangeArray const&) const':
+ilocpxcallback.cpp:(.text+0xca9f): undefined reference to `CPXgetcallbackincumbent'
+ilocpxcallback.cpp:(.text+0xcaf1): undefined reference to `CPXslackfromx'
+ilocpxcallback.cpp:(.text+0xcb43): undefined reference to `CPXqconstrslackfromx'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloCutCallbackManager::addLocalCut(IloConstraint)':
+ilocpxcallback.cpp:(.text+0xdc33): undefined reference to `CPXcutcallbackaddlocal'
+ilocpxcallback.cpp:(.text+0xdc71): undefined reference to `CPXcutcallbackaddlocal'
+ilocpxcallback.cpp:(.text+0xdca0): undefined reference to `CPXcutcallbackaddlocal'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloCutCallbackManager::addCut(IloConstraint, IloCplex::CutManagement)':
+ilocpxcallback.cpp:(.text+0xdf59): undefined reference to `CPXcutcallbackadd'
+ilocpxcallback.cpp:(.text+0xdf9d): undefined reference to `CPXcutcallbackadd'
+ilocpxcallback.cpp:(.text+0xdfd0): undefined reference to `CPXcutcallbackadd'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPInfoCallbackManager::getIncumbentSlacks(IloNumArray&, IloArray<IloForAllRange> const&) const':
+ilocpxcallback.cpp:(.text+0xe18f): undefined reference to `CPXgetcallbackincumbent'
+ilocpxcallback.cpp:(.text+0xe1e1): undefined reference to `CPXslackfromx'
+ilocpxcallback.cpp:(.text+0xe233): undefined reference to `CPXqconstrslackfromx'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloControlCallbackManager::getSlacks(IloNumArray&, IloRangeArray const&) const':
+ilocpxcallback.cpp:(.text+0xe7ff): undefined reference to `CPXgetcallbacknodex'
+ilocpxcallback.cpp:(.text+0xe851): undefined reference to `CPXslackfromx'
+ilocpxcallback.cpp:(.text+0xe8a3): undefined reference to `CPXqconstrslackfromx'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloMIPCallbackManager::getObjCoefs(IloNumArray&, IloNumVarArray const&) const':
+ilocpxcallback.cpp:(.text+0xedbc): undefined reference to `CPXgetobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloBranchCallbackManager::makeBranch(IloConstraintArray const&, IloNumVarArray const&, IloNumArray const&, IloArray<IloCplex::BranchDirection> const&, double, IloCplex::MIPCallbackI::NodeData*)':
+ilocpxcallback.cpp:(.text+0xfba1): undefined reference to `CPXSbranchcallbackbranchgeneral'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloBranchCallbackManager::makeBranch(IloConstraintArray const&, IloIntVarArray const&, IloNumArray const&, IloArray<IloCplex::BranchDirection> const&, double, IloCplex::MIPCallbackI::NodeData*)':
+ilocpxcallback.cpp:(.text+0x10c44): undefined reference to `CPXSbranchcallbackbranchgeneral'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloBranchCallbackManager::makeBranch(IloConstraint const&, double, IloCplex::MIPCallbackI::NodeData*)':
+ilocpxcallback.cpp:(.text+0x1130e): undefined reference to `CPXSbranchcallbackbranchconstraints'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloBranchCallbackManager::makeBranch(IloIntVarArray const&, IloNumArray const&, IloArray<IloCplex::BranchDirection> const&, double, IloCplex::MIPCallbackI::NodeData*)':
+ilocpxcallback.cpp:(.text+0x11c65): undefined reference to `CPXSbranchcallbackbranchbds'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloBranchCallbackManager::makeBranch(IloNumVarArray const&, IloNumArray const&, IloArray<IloCplex::BranchDirection> const&, double, IloCplex::MIPCallbackI::NodeData*)':
+ilocpxcallback.cpp:(.text+0x12455): undefined reference to `CPXSbranchcallbackbranchbds'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloBranchCallbackManager::makeBranch(IloConstraintArray const&, double, IloCplex::MIPCallbackI::NodeData*)':
+ilocpxcallback.cpp:(.text+0x12d88): undefined reference to `CPXSbranchcallbackbranchconstraints'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::setBounds(IloIntVarArray const&, IloNumArray const&, IloNumArray const&)':
+ilocpxcallback.cpp:(.text+0x13273): undefined reference to `CPXgetprestat'
+ilocpxcallback.cpp:(.text+0x1371c): undefined reference to `CPXchgbds'
+ilocpxcallback.cpp:(.text+0x13794): undefined reference to `CPXchgbds'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocpxcallback.o): In function `IloHeuristicCallbackManager::setBounds(IloNumVarArray const&, IloNumArray const&, IloNumArray const&)':
+ilocpxcallback.cpp:(.text+0x13bd4): undefined reference to `CPXgetprestat'
+ilocpxcallback.cpp:(.text+0x14092): undefined reference to `CPXchgbds'
+ilocpxcallback.cpp:(.text+0x1410a): undefined reference to `CPXchgbds'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::readParam(char const*)':
+ilocplexreader.cpp:(.text+0x6c): undefined reference to `CPXreadcopyparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::qreport(long)':
+ilocplexreader.cpp:(.text+0xa8): undefined reference to `CPXEshowquality'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::writeMIPStarts(char const*, long, long)':
+ilocplexreader.cpp:(.text+0x192): undefined reference to `CPXwritemipstarts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::writeTextSolution(char const*)':
+ilocplexreader.cpp:(.text+0x21b): undefined reference to `CPXtxtsolwrite'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::writeSolutions(char const*)':
+ilocplexreader.cpp:(.text+0x27b): undefined reference to `CPXsolwritesolnpoolall'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::writeSolution(char const*, long)':
+ilocplexreader.cpp:(.text+0x2e6): undefined reference to `CPXsolwritesolnpool'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::writeBasis(char const*)':
+ilocplexreader.cpp:(.text+0x34b): undefined reference to `CPXmbasewrite'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::writeParam(char const*)':
+ilocplexreader.cpp:(.text+0x38c): undefined reference to `CPXEwriteparam'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::installNames()':
+ilocplexreader.cpp:(.text+0x529): undefined reference to `CPXchgprobname'
+ilocplexreader.cpp:(.text+0x56c): undefined reference to `CPXcopyobjname'
+ilocplexreader.cpp:(.text+0x8db): undefined reference to `CPXcopyobjname'
+ilocplexreader.cpp:(.text+0xbef): undefined reference to `CPXchgcolname'
+ilocplexreader.cpp:(.text+0x11e7): undefined reference to `CPXEchgsosname'
+ilocplexreader.cpp:(.text+0x12ed): undefined reference to `CPXEchgqcname'
+ilocplexreader.cpp:(.text+0x132c): undefined reference to `CPXchgrowname'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::readMIPStarts(char const*)':
+ilocplexreader.cpp:(.text+0x14a3): undefined reference to `CPXreadcopymipstarts'
+ilocplexreader.cpp:(.text+0x14ba): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::readMIPStart(char const*)':
+ilocplexreader.cpp:(.text+0x1513): undefined reference to `CPXreadcopymipstart'
+ilocplexreader.cpp:(.text+0x152a): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::readSolution(char const*)':
+ilocplexreader.cpp:(.text+0x1583): undefined reference to `CPXreadcopysol'
+ilocplexreader.cpp:(.text+0x159a): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::readVectors(char const*)':
+ilocplexreader.cpp:(.text+0x15f3): undefined reference to `CPXreadcopyvec'
+ilocplexreader.cpp:(.text+0x160a): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::readBasis(char const*)':
+ilocplexreader.cpp:(.text+0x1663): undefined reference to `CPXreadcopybase'
+ilocplexreader.cpp:(.text+0x167a): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::readOrder(char const*)':
+ilocplexreader.cpp:(.text+0x16d3): undefined reference to `CPXreadcopyorder'
+ilocplexreader.cpp:(.text+0x16ea): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::writeVectors(char const*)':
+ilocplexreader.cpp:(.text+0x1743): undefined reference to `CPXvecwrite'
+ilocplexreader.cpp:(.text+0x175a): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::writeConflict(char const*)':
+ilocplexreader.cpp:(.text+0x17bb): undefined reference to `CPXclpwrite'
+ilocplexreader.cpp:(.text+0x17d2): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::writeOrder(char const*)':
+ilocplexreader.cpp:(.text+0x182b): undefined reference to `CPXordwrite'
+ilocplexreader.cpp:(.text+0x1842): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::exportModel(char const*)':
+ilocplexreader.cpp:(.text+0x1895): undefined reference to `CPXwriteprob'
+ilocplexreader.cpp:(.text+0x18ac): undefined reference to `CPXEdelnames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexreader.o): In function `IloCplexI::importModel(IloModel&, char const*, IloObjective&, IloNumVarArray, IloRangeArray, IloSOS1Array, IloSOS2Array, IloRangeArray, IloRangeArray) const':
+ilocplexreader.cpp:(.text+0x1aac): undefined reference to `CPXcreateprob'
+ilocplexreader.cpp:(.text+0x1aed): undefined reference to `CPXreadcopyprob'
+ilocplexreader.cpp:(.text+0x1b1c): undefined reference to `CPXgetnumrows'
+ilocplexreader.cpp:(.text+0x1b3f): undefined reference to `CPXgetnumcols'
+ilocplexreader.cpp:(.text+0x1b62): undefined reference to `CPXgetnumnz'
+ilocplexreader.cpp:(.text+0x1d44): undefined reference to `CPXgetprobtype'
+ilocplexreader.cpp:(.text+0x1d8f): undefined reference to `CPXgetprobname'
+ilocplexreader.cpp:(.text+0x1e0a): undefined reference to `CPXgetquad'
+ilocplexreader.cpp:(.text+0x1e6f): undefined reference to `CPXgetobj'
+ilocplexreader.cpp:(.text+0x1eab): undefined reference to `CPXgetlb'
+ilocplexreader.cpp:(.text+0x1eec): undefined reference to `CPXgetub'
+ilocplexreader.cpp:(.text+0x216d): undefined reference to `CPXgetcolname'
+ilocplexreader.cpp:(.text+0x21fe): undefined reference to `CPXgetnumindconstrs'
+ilocplexreader.cpp:(.text+0x2384): undefined reference to `CPXEgetindicator'
+ilocplexreader.cpp:(.text+0x263c): undefined reference to `CPXEgetindicator'
+ilocplexreader.cpp:(.text+0x27a2): undefined reference to `CPXEgetindicator'
+ilocplexreader.cpp:(.text+0x2916): undefined reference to `CPXgetctype'
+ilocplexreader.cpp:(.text+0x2e73): undefined reference to `CPXfreeprob'
+ilocplexreader.cpp:(.text+0x31c9): undefined reference to `CPXgetindconstrname'
+ilocplexreader.cpp:(.text+0x32d6): undefined reference to `CPXgetrhs'
+ilocplexreader.cpp:(.text+0x3312): undefined reference to `CPXgetsense'
+ilocplexreader.cpp:(.text+0x338c): undefined reference to `CPXgetrows'
+ilocplexreader.cpp:(.text+0x345c): undefined reference to `CPXgetrngval'
+ilocplexreader.cpp:(.text+0x380d): undefined reference to `CPXgetrowname'
+ilocplexreader.cpp:(.text+0x3b90): undefined reference to `CPXgetobjname'
+ilocplexreader.cpp:(.text+0x3c0b): undefined reference to `CPXgetobjname'
+ilocplexreader.cpp:(.text+0x3c3a): undefined reference to `CPXgetobjsen'
+ilocplexreader.cpp:(.text+0x3cfc): undefined reference to `CPXgetnumqconstrs'
+ilocplexreader.cpp:(.text+0x3e66): undefined reference to `CPXgetqconstr'
+ilocplexreader.cpp:(.text+0x4008): undefined reference to `CPXgetqconstr'
+ilocplexreader.cpp:(.text+0x4302): undefined reference to `CPXgetqconstr'
+ilocplexreader.cpp:(.text+0x4aaf): undefined reference to `CPXgetqconstrname'
+ilocplexreader.cpp:(.text+0x4b72): undefined reference to `CPXgetnumsos'
+ilocplexreader.cpp:(.text+0x4cc5): undefined reference to `CPXgetsos'
+ilocplexreader.cpp:(.text+0x4e0a): undefined reference to `CPXgetsos'
+ilocplexreader.cpp:(.text+0x52b0): undefined reference to `CPXgetsosname'
+ilocplexreader.cpp:(.text+0x540d): undefined reference to `CPXgetsosname'
+ilocplexreader.cpp:(.text+0x58ef): undefined reference to `CPXgetquad'
+ilocplexreader.cpp:(.text+0x5ec0): undefined reference to `CPXfreeprob'
+ilocplexreader.cpp:(.text+0x608f): undefined reference to `CPXEgetlazyconstraints'
+ilocplexreader.cpp:(.text+0x613c): undefined reference to `CPXEgetusercuts'
+ilocplexreader.cpp:(.text+0x61cd): undefined reference to `CPXEgetusercutname'
+ilocplexreader.cpp:(.text+0x628b): undefined reference to `CPXEgetusercutname'
+ilocplexreader.cpp:(.text+0x6337): undefined reference to `CPXEgetusercutname'
+ilocplexreader.cpp:(.text+0x6473): undefined reference to `CPXEgetlazyconstraintname'
+ilocplexreader.cpp:(.text+0x655e): undefined reference to `CPXEgetlazyconstraintname'
+ilocplexreader.cpp:(.text+0x6612): undefined reference to `CPXEgetusercutname'
+ilocplexreader.cpp:(.text+0x66fc): undefined reference to `CPXEgetlazyconstraintname'
+ilocplexreader.cpp:(.text+0x682c): undefined reference to `CPXEgetlazyconstraintname'
+ilocplexreader.cpp:(.text+0x68e5): undefined reference to `CPXgetobjsen'
+ilocplexreader.cpp:(.text+0x7366): undefined reference to `CPXgetindconstrname'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexsolnpool.o): In function `IloCplexI::delFiltersFromLP()':
+ilocplexsolnpool.cpp:(.text+0x83): undefined reference to `CPXgetsolnpoolnumfilters'
+ilocplexsolnpool.cpp:(.text+0xa4): undefined reference to `CPXdelsolnpoolfilters'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexsolnpool.o): In function `IloCplexI::getSolnPoolNreplaced() const':
+ilocplexsolnpool.cpp:(.text+0x213): undefined reference to `CPXgetsolnpoolnumreplaced'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexsolnpool.o): In function `IloCplexI::getSolnPoolNsolns() const':
+ilocplexsolnpool.cpp:(.text+0x233): undefined reference to `CPXgetsolnpoolnumsolns'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexsolnpool.o): In function `IloCplexI::getSolnPoolMeanObjValue() const':
+ilocplexsolnpool.cpp:(.text+0x25c): undefined reference to `CPXgetsolnpoolmeanobjval'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexsolnpool.o): In function `IloCplexI::delSolnPoolSolns(long, long)':
+ilocplexsolnpool.cpp:(.text+0x69a): undefined reference to `CPXdelsolnpoolsolns'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexsolnpool.o): In function `IloCplexI::flushFilters()':
+ilocplexsolnpool.cpp:(.text+0x977): undefined reference to `CPXgetsolnpoolnumfilters'
+ilocplexsolnpool.cpp:(.text+0xa32): undefined reference to `CPXaddsolnpoolrngfilter'
+ilocplexsolnpool.cpp:(.text+0xa8a): undefined reference to `CPXaddsolnpooldivfilter'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexsolnpool.o): In function `IloCplexI::writeFilters(char const*)':
+ilocplexsolnpool.cpp:(.text+0xb6b): undefined reference to `CPXfltwrite'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilocplexsolnpool.o): In function `IloCplexI::readFilters(char const*)':
+ilocplexsolnpool.cpp:(.text+0xf66): undefined reference to `CPXreadcopysolnpoolfilters'
+ilocplexsolnpool.cpp:(.text+0xf81): undefined reference to `CPXdelnames'
+ilocplexsolnpool.cpp:(.text+0xf9c): undefined reference to `CPXgetsolnpoolnumfilters'
+ilocplexsolnpool.cpp:(.text+0x105b): undefined reference to `CPXgetsolnpoolfiltername'
+ilocplexsolnpool.cpp:(.text+0x11dc): undefined reference to `CPXgetsolnpoolfilter'
+ilocplexsolnpool.cpp:(.text+0x1215): undefined reference to `CPXgetsolnpoolfiltername'
+ilocplexsolnpool.cpp:(.text+0x12e2): undefined reference to `CPXgetsolnpoolfilter'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilomipstart.o): In function `IloCplexI::getMIPStartIndex(char const*) const':
+ilomipstart.cpp:(.text+0x90): undefined reference to `CPXgetmipstartindex'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilomipstart.o): In function `IloCplexI::getMIPStartName(long)':
+ilomipstart.cpp:(.text+0x10b): undefined reference to `CPXgetmipstartname'
+ilomipstart.cpp:(.text+0x189): undefined reference to `CPXgetmipstartname'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilomipstart.o): In function `IloCplexI::deleteMIPStarts(long, long)':
+ilomipstart.cpp:(.text+0x272): undefined reference to `CPXdelmipstarts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilomipstart.o): In function `IloCplexI::addMIPStart(IloNumVarArray, IloNumArray, IloCplex::MIPStartEffort, char const*)':
+ilomipstart.cpp:(.text+0x47a): undefined reference to `CPXaddmipstarts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilomipstart.o): In function `IloCplexI::getMIPStart(long, IloNumVarArray, IloNumArray, IloBoolArray)':
+ilomipstart.cpp:(.text+0x6b7): undefined reference to `CPXgetmipstarts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilomipstart.o): In function `IloCplexI::changeMIPStart(long, IloNumVarArray, IloNumArray, IloCplex::MIPStartEffort)':
+ilomipstart.cpp:(.text+0xd8e): undefined reference to `CPXchgmipstarts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilomipstart.o): In function `IloCplexI::changeMIPStart(long, IloNumVarArray, IloNumArray)':
+ilomipstart.cpp:(.text+0x104e): undefined reference to `CPXchgmipstarts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilomipstart.o): In function `IloCplexI::getNMIPStarts() const':
+ilomipstart.cpp:(.text+0x229): undefined reference to `CPXgetnummipstarts'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilodeflpextr.o): In function `IloDefaultLPExtractor::applyAddValueToObj(IloAddValueToObj const*, int**)':
+ilodeflpextr.cpp:(.text+0x20c1): undefined reference to `CPXchgobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilodeflpextr.o): In function `IloDefaultLPExtractor::extractObj(IloObjectiveI const*, int**)':
+ilodeflpextr.cpp:(.text+0xa440): undefined reference to `CPXchgobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilodeflpextr.o): In function `IloDefaultLPExtractor::applySetObjExpr(IloSetObjExpr const*, int**)':
+ilodeflpextr.cpp:(.text+0xa576): undefined reference to `CPXchgobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilodeflpextr.o): In function `IloDefaultLPExtractor::applySetObjCoef(IloSetObjCoef const*, int**)':
+ilodeflpextr.cpp:(.text+0xa8d1): undefined reference to `CPXchgobj'
+ilodeflpextr.cpp:(.text+0xa910): undefined reference to `CPXchgobj'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(cpxcache.o): In function `IloCplexCache::Hook::newRow(cpxenv*, cpxlp*, char, double, double)':
+cpxcache.cpp:(.text+0x819): undefined reference to `CPXEcacheNewRows'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(cpxcache.o): In function `IloCplexCache::Hook::addNames(cpxenv*, cpxnameset32*, int, char const* const*)':
+cpxcache.cpp:(.text+0x8bc): undefined reference to `CPXEnsAddNames'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(cpxcache.o): In function `IloCplexCache::Hook::addNZ(cpxenv*, cpxlp*, int, int, double)':
+cpxcache.cpp:(.text+0x980): undefined reference to `CPXEcacheNewNZsByNZ'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(cpxcache.o): In function `IloCplexCache::Hook::newCol(cpxenv*, cpxlp*, double, double, double)':
+cpxcache.cpp:(.text+0xa44): undefined reference to `CPXEcacheNewCols'
+/opt/ibm/ILOG/CPLEX_Studio124/cplex/lib/x86-64_sles10_4.1/static_pic/libilocplex.a(ilogoals.o): In function `IloCplexI::initGoals(long&, long&)':
+ilogoals.cpp:(.text+0x4c69): undefined reference to `CPXEgetmaxthreads'
+collect2: ld a retourné 1 code d'état d'exécution
+make[3]: *** [src/deltaPlaningEA] Erreur 1
+make[2]: *** [src/CMakeFiles/deltaPlaningEA.dir/all] Erreur 2
+make[1]: *** [src/CMakeFiles/deltaPlaningEA.dir/rule] Erreur 2
+make: *** [src/CMakeFiles/deltaPlaningEA.dir/rule] Erreur 2

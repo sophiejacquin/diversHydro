@@ -1,0 +1,17 @@
+
+#include <vector>
+#include<cstring>
+#include <iostream>
+#include <fstream>
+#include <stdlib.h>
+#include "Systeme.h"
+using namespace std; 
+main(){
+	 Systeme systeme;
+	systeme.ini("entrees.txt",1);
+	int i;
+	for(i=0;i<8760;i++)
+	{
+		cout<<systeme.getPrixSpot()[i]<<' ';
+	}
+}

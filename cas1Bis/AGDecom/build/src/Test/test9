@@ -1,0 +1,37 @@
+systeme créé dans deltaPlaningEA 
+fonction d'evaluation créée 
+là
+taille : 1
+0
+1
+fonction d'initialisation créée 
+fonction croisement créée 
+fonction mutationcréée 
+pop initialisée
+Initial Population
+20
+1.6139e+07  1 INVALID   
+1.58409e+07  1 INVALID   
+1.57521e+07  1 INVALID   
+1.56441e+07  1 INVALID   
+1.52882e+07  1 INVALID   
+1.52727e+07  1 INVALID   
+1.52066e+07  1 INVALID   
+1.52031e+07  1 INVALID   
+1.5178e+07  1 INVALID   
+1.5131e+07  1 INVALID   
+1.50895e+07  1 INVALID   
+1.50647e+07  1 INVALID   
+1.50184e+07  1 INVALID   
+1.49917e+07  1 INVALID   
+1.49895e+07  1 INVALID   
+1.4829e+07  1 INVALID   
+1.4805e+07  1 INVALID   
+1.46003e+07  1 INVALID   
+1.45631e+07  1 INVALID   
+1.44192e+07  1 INVALID   
+
+1.6139e+07  1 INVALID   
+Gen.	Eval.               	Time                	Best                	Average & Stdev     	
+1                   	32                  	521.1               	1.6313e+07          	1.53304e+07 409861  	
+2                   	46                  	642.21              	1.6313e+07          	1.53616e+07 332933  	

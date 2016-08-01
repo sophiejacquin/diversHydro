@@ -1,0 +1,118 @@
+setwd("Dropbox/These-Sophie/cas1Bis/Résultats/Test/")
+data =read.table("testGrand1")
+data =read.table("testGrand1")
+data
+? reade.table
+??reade.table
+?read.table
+? reade.table
+? read.table
+data =read.table("testGrand1",header=TRUE)
+data
+?plot
+plot(data.Best,b)
+data.Best
+data.Time
+data
+data.Time()
+data.Gen.
+?table
+data[,"Time"]
+plot(data[,"Best"])
+plot(data[,"Average"])
+plot(data[,"Average"],col ="red")
+lines(data[,"Best"])
+plot(data[,"Average"],col ="red",l)
+plot(data[,"Average"],col ="red")
+points(data[,"Average"],col ="red")
+points(data[,"Best"])
+plot(data[,"Average"],col ="red",type="l")
+lines(data[,"Best"])
+plot(data[,"Average"],col ="red",type="l",lab=(10,10,0))
+plot(data[,"Average"],col ="red",type="l",lab=c(10,10,0))
+lines(data[,"Best"])
+plot(data[,"Average"],col ="red",type="l",lab=c(50,10,0))
+plot(data[,"Average"],col ="red",type="l",lab=c(50,50,0))
+lines(data[,"Best"])
+plot(data[,"Average"],col ="red",type="l",lab=c(50,50,0),main="Test 1 AGD P100 -w1")
+lines(data[,"Best"])
+plot(data[,"Average"],col ="red",type="l",lab=c(50,50,0),main="Test 1 AGD P100 -w1")
+lines(data[,"Best"])
+for(inter in 1:20)
+end for
+for(i in 1:20){}
+for (i in 1:20){cat i}
+for (i in 1:20){cat(i)}
+for (i in 1:20){ch<-paste('test',i) cat(ch)}
+for (i in 1:20){ch<-paste('test',i) }
+ch
+for (i in 1:20){ch<-paste('test',i)
+cat(ch)}
+for (i in 1:20){ch<-paste('test',i,sep='')
+cat(ch)}
+for (i in 1:20){ch<-paste('test',i,sep='')
+data= read.table(ch)
+}
+data= read.table("testGrand1")
+best<-testGrand1[,"Best"]
+best
+data =read.table("testGrand1",header=TRUE)
+best<-data[,"Best"]
+best
+??read.table
+data =read.table("testGrand2",header=TRUE,sep ="&",sep= " ")
+data =read.table("testGrand2",header=TRUE,sep ="&")
+data =read.table("testGrand2",skip =1)
+best<-cbind(data[,V4])
+best<-cbind(data[,4])
+best
+data =read.table("testGrand3",skip =1)
+best<-cbind(data[,4])
+best
+best<-cbind(data[,4])
+best
+best<-cbind(best,data[,4])
+best
+for (i in 1:20){ch<-paste('testGrand',i,sep='')
+data=read.data(ch,skip=1)
+best=cbind(best, data[,4])
+moyenne=cbind(moyenne,data[,5])
+}
+for (i in 1:20){ch<-paste('testGrand',i,sep='')
+data=read.table(ch,skip=1)
+best=cbind(best, data[,4])
+moyenne<-cbind(moyenne,data[,5])
+}
+clean
+clear
+rm data
+rm(data)
+data
+data=read.table("testGrand1",skip=1)
+best<-data[,4]
+best
+moy<-data[,5]
+moy
+for (i in 1:20){ch<-paste('testGrand',i,sep='')
+data=read.table(ch,skip=1)
+best<-cbind(best, data[,4])
+moy<-cbind(moy,data[,5])
+}
+best
+best[,20]
+best[,18]
+best[,21]
+best[,22]
+moy[,20]
+moyBest<-rowMeans(best)
+moyBest
+moyMoy<-rowMeans(moy)
+plot(best,col="red")
+plot(moybest,col="red")
+plot(moyBest,col="red")
+points(moyMoy)
+plot(moyBest,col="red")
+plot(moyBest,col="red",pch=".")
+points(moyMoy,pch=".")
+plot(moyBest,col="red",pch=".",main="Tests pop100 avec ellitisme")
+points(moyMoy,pch=".")

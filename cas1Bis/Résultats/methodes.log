@@ -1,0 +1,1562 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2013.2.24)  24 FEB 2013 16:21
+entering extended mode
+ %&-line parsing enabled.
+**methodes.tex
+(./methodes.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, french, basque, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/report.cls
+Document Class: report 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/frenchb.ldf
+Language: frenchb 2009/03/16 v2.3d French support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+Package babel Info: Making : an active character on input line 120.
+Package babel Info: Making ; an active character on input line 121.
+Package babel Info: Making ! an active character on input line 122.
+Package babel Info: Making ? an active character on input line 123.
+\FB@Mht=\dimen104
+\std@mcc=\count89
+\dec@mcc=\count90
+\parindentFFN=\dimen105
+
+*************************************
+* Local config file frenchb.cfg used
+*
+(/usr/share/texmf-texlive/tex/generic/babel/frenchb.cfg)))
+(/usr/share/texmf-texlive/tex/latex/carlisle/scalefnt.sty)
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen106
+\Hy@linkcounter=\count91
+\Hy@pagecounter=\count92
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Option `bookmarks' set `true' on input line 2864.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 2864
+.
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count93
+\Field@Width=\dimen107
+\Fld@charsize=\dimen108
+\Field@toks=\toks17
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring OFF on input line 4397.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count94
+\c@Item=\count95
+\c@Hfootnote=\count96
+)
+*hyperref using driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count97
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen109
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen110
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count98
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count99
+\leftroot@=\count100
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count101
+\DOTSCASE@=\count102
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen111
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count103
+\c@MaxMatrixCols=\count104
+\dotsspace@=\muskip11
+\c@parentequation=\count105
+\dspbrk@lvl=\count106
+\tag@help=\toks19
+\row@=\count107
+\column@=\count108
+\maxfields@=\count109
+\andhelp@=\toks20
+\eqnshift@=\dimen112
+\alignsep@=\dimen113
+\tagshift@=\dimen114
+\tagwidth@=\dimen115
+\totwidth@=\dimen116
+\lineht@=\dimen117
+\@envbody=\toks21
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+)
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+)
+(/usr/share/texmf-texlive/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count110
+\float@exts=\toks23
+\float@box=\box28
+\@float@everytoks=\toks24
+\@floatcapt=\box29
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks25
+\c@algorithm=\count111
+)
+(/usr/share/texmf-texlive/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count112
+\c@ALC@line=\count113
+\c@ALC@rem=\count114
+\c@ALC@depth=\count115
+\ALC@tlm=\skip46
+\algorithmicindent=\skip47
+)
+(/usr/share/texmf-texlive/tex/latex/caption/caption.sty
+Package: caption 2009/10/09 v3.1k Customizing captions (AR)
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@indent=\dimen121
+\caption@parindent=\dimen122
+\caption@hangindent=\dimen123
+)
+\c@ContinuedFloat=\count116
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count117
+))
+\Gin@req@height=\dimen124
+\Gin@req@width=\dimen125
+)
+(/usr/share/texmf-texlive/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/share/texmf-texlive/tex/latex/tocbibind/tocbibind.sty
+Package: tocbibind 2009/09/04 v1.5i extra ToC listings
+
+
+Package tocbibind Note: The document has chapter divisions.
+
+
+Package tocbibind Note: Using chapter style headings, unless overridden.
+
+) (./methodes.aux)
+\openout1 = `methodes.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 23.
+ (/usr/share/texmf/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Info: Redefining \degres on input line 23.
+LaTeX Info: Redefining \dots on input line 23.
+LaTeX Info: Redefining \up on input line 23.
+Package hyperref Info: Link coloring OFF on input line 23.
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count118
+)
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+ (./methodes.out)
+(./methodes.out)
+\@outlinefile=\write4
+\openout4 = `methodes.out'.
+
+\AtBeginShipoutBox=\box30
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count119
+\scratchdimen=\dimen126
+\scratchbox=\box31
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen127
+\MPnumerator=\count123
+\everyMPtoPDFconversion=\toks27
+) (./methodes.toc
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 3.
+ (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 3.
+
+(/usr/share/texmf/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 3.
+
+(/usr/share/texmf/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 3.
+
+(/usr/share/texmf/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 3.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 3.
+LaTeX Font Info:    Try loading font information for U+msa on input line 3.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 3.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+) [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+\tf@toc=\write5
+\openout5 = `methodes.toc'.
+
+ [2]
+Chapitre 1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+[3
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 58--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 83--107
+
+ []
+
+[4]
+
+LaTeX Warning: Citation `dynaRef' on page 5 undefined on input line 111.
+
+<images/dynamique.jpg, id=215, 812.03375pt x 358.33875pt>
+File: images/dynamique.jpg Graphic file (type jpg)
+
+<use images/dynamique.jpg>
+Overfull \hbox (61.01588pt too wide) in paragraph at lines 125--126
+ [] 
+ []
+
+[5 <./images/dynamique.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 141--142
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--155
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 165--167
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 177--178
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--189
+
+ []
+
+
+Overfull \hbox (3.13786pt too wide) in paragraph at lines 201--201
+[]\T1/lmr/bx/n/12 Généralisation de l'al-go-rithme glou-ton au cas li-néaire
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 202--203
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 206--207
+
+ []
+
+
+LaTeX Warning: Command \` invalid in math mode on input line 209.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--220
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 220--221
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 221--222
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 257--258
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 261--262
+
+ []
+
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 264.
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 281--282
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--309
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--311
+
+ []
+
+[10]
+Underfull \hbox (badness 10000) in paragraph at lines 339--366
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 367--369
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 400--404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 405--406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 406--407
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 407--408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 408--409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 448--451
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 466--467
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 468--469
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 469--470
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 476--477
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 478--479
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 481--482
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 483--484
+
+ []
+
+<images/interactionModules.jpg, id=285, 790.955pt x 205.76875pt>
+File: images/interactionModules.jpg Graphic file (type jpg)
+
+<use images/interactionModules.jpg>
+Overfull \hbox (50.47653pt too wide) in paragraph at lines 503--504
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 505--507
+
+ []
+
+[14 <./images/interactionModules.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 509--510
+
+ []
+
+<images/Evolutionary_algorithm.png, id=291, 495.88338pt x 333.55385pt>
+File: images/Evolutionary_algorithm.png Graphic file (type png)
+
+<use images/Evolutionary_algorithm.png>
+Underfull \hbox (badness 10000) in paragraph at lines 514--519
+
+ []
+
+[15 <./images/Evolutionary_algorithm.png>]
+<images/representation.jpg, id=299, 589.20125pt x 271.0125pt>
+File: images/representation.jpg Graphic file (type jpg)
+
+<use images/representation.jpg>
+Overfull \hbox (8.52347pt too wide) in paragraph at lines 528--529
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 537--539
+
+ []
+
+[16 <./images/representation.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 540--543
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 546--547
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 558--559
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--561
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 564--569
+
+ []
+
+[17]
+Underfull \hbox (badness 10000) in paragraph at lines 578--580
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 581--582
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 585--587
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--593
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 596--598
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 601--604
+
+ []
+
+[18] <images/mutation.jpg, id=315, 395.4775pt x 143.53625pt>
+File: images/mutation.jpg Graphic file (type jpg)
+
+<use images/mutation.jpg>
+<images/croisement1pt.jpg, id=316, 430.60875pt x 330.23375pt>
+File: images/croisement1pt.jpg Graphic file (type jpg)
+
+<use images/croisement1pt.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 627--628
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 629--632
+
+ []
+
+[19 <./images/mutation.jpg> <./images/croisement1pt.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 636--637
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 639--640
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 641--642
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 644--645
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--649
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 650--651
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 652--656
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 659--660
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 665--666
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--678
+
+ []
+
+[20]
+Underfull \hbox (badness 10000) in paragraph at lines 689--690
+
+ []
+
+<images/deltaMutation.jpg, id=329, 331.2375pt x 143.53625pt>
+File: images/deltaMutation.jpg Graphic file (type jpg)
+
+<use images/deltaMutation.jpg> [21]
+Underfull \hbox (badness 10000) in paragraph at lines 693--695
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 696--697
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 699--701
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 702--705
+
+ []
+
+<images/deltaCroisement.jpg, id=337, 430.60875pt x 330.23375pt>
+File: images/deltaCroisement.jpg Graphic file (type jpg)
+
+<use images/deltaCroisement.jpg> [22 <./images/deltaMutation.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 715--716
+
+ []
+
+<images/RplotDecomTest1.pdf, id=344, 505.89pt x 505.89pt>
+File: images/RplotDecomTest1.pdf Graphic file (type pdf)
+
+<use images/RplotDecomTest1.pdf> [23 <./images/deltaCroisement.jpg>]
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 731--754
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 757--758
+
+ []
+
+<images/RplotDecomTest2.pdf, id=349, 505.89pt x 505.89pt>
+File: images/RplotDecomTest2.pdf Graphic file (type pdf)
+
+<use images/RplotDecomTest2.pdf> [24 <./images/RplotDecomTest1.pdf>]
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 773--798
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 799--800
+
+ []
+
+<images/RplotDecomTest5.pdf, id=411, 505.89pt x 505.89pt>
+File: images/RplotDecomTest5.pdf Graphic file (type pdf)
+
+<use images/RplotDecomTest5.pdf> [25 <./images/RplotDecomTest2.pdf>]
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 815--840
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 841--842
+
+ []
+
+<images/RplotDecomTest4.pdf, id=474, 824.90765pt x 471.6044pt>
+File: images/RplotDecomTest4.pdf Graphic file (type pdf)
+
+<use images/RplotDecomTest4.pdf> [26 <./images/RplotDecomTest5.pdf>]
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 857--882
+[]
+ []
+
+
+Overfull \hbox (12.41623pt too wide) in paragraph at lines 857--882
+\T1/lmr/m/n/10 On passe d'une so-lu-tion à 94.712347 pourcent de l'op-ti-mal à 
+une à 95.312055636623,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 883--884
+
+ []
+
+<images/RplotDecomTest6.pdf, id=536, 843.57971pt x 637.5393pt>
+File: images/RplotDecomTest6.pdf Graphic file (type pdf)
+
+<use images/RplotDecomTest6.pdf> [27 <./images/RplotDecomTest4.pdf>]
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 899--924
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 925--926
+
+ []
+
+<images/RplotDecomTest7.pdf, id=598, 505.89pt x 505.89pt>
+File: images/RplotDecomTest7.pdf Graphic file (type pdf)
+
+<use images/RplotDecomTest7.pdf> [28 <./images/RplotDecomTest6.pdf>]
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 941--966
+[]
+ []
+
+
+Overfull \hbox (31.94391pt too wide) in paragraph at lines 941--966
+\T1/lmr/m/n/10 On passe d'une so-lu-tion à 89.0636 de l'op-ti-mum à une so-lu-t
+ion qui est à 90.103573535347
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 967--969
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 970--971
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 971--972
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 972--973
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 973--974
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 974--975
+
+ []
+
+[29 <./images/RplotDecomTest7.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 983--984
+
+ []
+
+<images/RplotDecomCompGen1.pdf, id=737, 505.89pt x 505.89pt>
+File: images/RplotDecomCompGen1.pdf Graphic file (type pdf)
+
+<use images/RplotDecomCompGen1.pdf>
+<images/RplotDecomCompTemps1.pdf, id=738, 505.89pt x 505.89pt>
+File: images/RplotDecomCompTemps1.pdf Graphic file (type pdf)
+
+<use images/RplotDecomCompTemps1.pdf> [30 <./images/RplotDecomCompGen1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 994--996
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--999
+
+ []
+
+<images/RplotcompGeneration2.pdf, id=800, 505.89pt x 505.89pt>
+File: images/RplotcompGeneration2.pdf Graphic file (type pdf)
+
+<use images/RplotcompGeneration2.pdf> [31 <./images/RplotDecomCompTemps1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1005
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1007
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1007--1008
+
+ []
+
+<images/RplotDecompCompTemps2.pdf, id=871, 505.89pt x 505.89pt>
+File: images/RplotDecompCompTemps2.pdf Graphic file (type pdf)
+
+<use images/RplotDecompCompTemps2.pdf> [32 <./images/RplotcompGeneration2.pdf> 
+<./images/RplotDecompCompTemps2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1025--1028
+
+ []
+
+[33]
+Underfull \hbox (badness 10000) in paragraph at lines 1042--1044
+
+ []
+
+
+Overfull \hbox (0.2778pt too wide) in paragraph at lines 1048--1049
+[]\T1/lmr/m/n/10 On cal-cul le vo-lume mi-ni-mal qu'il faut dé-ver-ser pour res
+-pec-ter la contrainte
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1058--1059
+
+ []
+
+<images/RplotAGRTest2.pdf, id=1016, 505.89pt x 505.89pt>
+File: images/RplotAGRTest2.pdf Graphic file (type pdf)
+
+<use images/RplotAGRTest2.pdf> [34]
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 1074--1099
+[]
+ []
+
+
+Overfull \hbox (15.86754pt too wide) in paragraph at lines 1074--1099
+\T1/lmr/m/n/10 0.85855009469403fois la so-lu-tion op-ti-male. Le gain n'est don
+c que de 0.075910468503
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1100--1101
+
+ []
+
+<images/RplotAGRtest1.pdf, id=1024, 623.51543pt x 512.58432pt>
+File: images/RplotAGRtest1.pdf Graphic file (type pdf)
+
+<use images/RplotAGRtest1.pdf> [35 <./images/RplotAGRTest2.pdf>]
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 1116--1140
+[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1144--1145
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1146
+
+ []
+
+<images/RplotAGRCompTemps.pdf, id=1090, 505.89pt x 505.89pt>
+File: images/RplotAGRCompTemps.pdf Graphic file (type pdf)
+
+<use images/RplotAGRCompTemps.pdf> [36 <./images/RplotAGRtest1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1158--1159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1163--1164
+
+ []
+
+<images/grapheADG.jpg, id=1156, 1059.96pt x 576.1525pt>
+File: images/grapheADG.jpg Graphic file (type jpg)
+
+<use images/grapheADG.jpg> [37 <./images/RplotAGRCompTemps.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1171--1172
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1176--1178
+
+ []
+
+<images/representionADG.jpg, id=1228, 518.93875pt x 244.915pt>
+File: images/representionADG.jpg Graphic file (type jpg)
+
+<use images/representionADG.jpg>
+Underfull \hbox (badness 10000) in paragraph at lines 1187--1188
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1189--1190
+
+ []
+
+[38 <./images/grapheADG.jpg> <./images/representionADG.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 1211--1212
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1213--1214
+
+ []
+
+<images/croisementADG.jpg, id=1234, 819.06pt x 474.77374pt>
+File: images/croisementADG.jpg Graphic file (type jpg)
+
+<use images/croisementADG.jpg> [39]
+<images/mutationADG.jpg, id=1240, 1059.96pt x 576.1525pt>
+File: images/mutationADG.jpg Graphic file (type jpg)
+
+<use images/mutationADG.jpg>
+Overfull \hbox (78.97649pt too wide) in paragraph at lines 1231--1232
+ [] 
+ []
+
+[40 <./images/croisementADG.jpg> <./images/mutationADG.jpg>]
+<images/mutationADG2.jpg, id=1246, 1059.96pt x 576.1525pt>
+File: images/mutationADG2.jpg Graphic file (type jpg)
+
+<use images/mutationADG2.jpg>
+Overfull \hbox (78.97649pt too wide) in paragraph at lines 1238--1239
+ [] 
+ []
+
+File: images/representionADG.jpg Graphic file (type jpg)
+<use images/representionADG.jpg> [41 <./images/mutationADG2.jpg>]
+<images/test1.pdf, id=1253, 1243.69649pt x 766.5251pt>
+File: images/test1.pdf Graphic file (type pdf)
+ <use images/test1.pdf>
+Overfull \hbox (28.11183pt too wide) in paragraph at lines 1252--1253
+ [] 
+ []
+
+
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 1254--1278
+[]
+ []
+
+[42 <./images/test1.pdf>] <images/plotTest2.pdf, id=1333, 505.89pt x 505.89pt>
+File: images/plotTest2.pdf Graphic file (type pdf)
+
+<use images/plotTest2.pdf>
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 1283--1306
+[]
+ []
+
+<images/plotTest3.pdf, id=1334, 1471.09598pt x 722.85806pt>
+File: images/plotTest3.pdf Graphic file (type pdf)
+
+<use images/plotTest3.pdf>
+Overfull \hbox (96.3322pt too wide) in paragraph at lines 1309--1310
+ [] 
+ []
+
+[43 <./images/plotTest2.pdf>]
+Overfull \hbox (3.16576pt too wide) in paragraph at lines 1311--1337
+[]
+ []
+
+<images/RplotTest5.pdf, id=1395, 953.61188pt x 736.96588pt>
+File: images/RplotTest5.pdf Graphic file (type pdf)
+
+<use images/RplotTest5.pdf>
+Overfull \hbox (131.80478pt too wide) in paragraph at lines 1342--1343
+ [] 
+ []
+
+[44 <./images/plotTest3.pdf>]
+<images/RplotTest6.pdf, id=1478, 1707.16493pt x 876.70052pt>
+File: images/RplotTest6.pdf Graphic file (type pdf)
+
+<use images/RplotTest6.pdf>
+Overfull \hbox (81.79019pt too wide) in paragraph at lines 1374--1375
+ [] 
+ []
+
+[45 <./images/RplotTest5.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1376--1399
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1402--1404
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1406
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1406--1407
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1407--1408
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1408--1409
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1409--1410
+
+ []
+
+<images/RplotcompGen.pdf, id=1545, 1707.16493pt x 876.70052pt>
+File: images/RplotcompGen.pdf Graphic file (type pdf)
+
+<use images/RplotcompGen.pdf>
+Overfull \hbox (81.79019pt too wide) in paragraph at lines 1413--1414
+ [] 
+ []
+
+[46 <./images/RplotTest6.pdf>]
+<images/RplotcompTemps.pdf, id=1620, 1707.16493pt x 876.70052pt>
+File: images/RplotcompTemps.pdf Graphic file (type pdf)
+
+<use images/RplotcompTemps.pdf>
+Overfull \hbox (81.79019pt too wide) in paragraph at lines 1416--1417
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1420--1421
+
+ []
+
+[47 <./images/RplotcompGen.pdf> <./images/RplotcompTemps.pdf>]
+
+LaTeX Warning: Command \' invalid in math mode on input line 1430.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 1430.
+
+[48] (./methodes.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 7770 strings out of 495028
+ 112183 string characters out of 1181229
+ 196425 words of memory out of 3000000
+ 10623 multiletter control sequences out of 15000+50000
+ 46663 words of font info for 41 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 38i,8n,38p,1052b,754s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dv
+ips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/s
+hare/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/l
+m/lm-ec.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex
+10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fon
+ts/type1/public/lm/lmmi5.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi7.pfb>
+</usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1
+/public/lm/lmr5.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/shar
+e/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmsy7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/symbols/msbm1
+0.pfb>
+Output written on methodes.pdf (48 pages, 4278295 bytes).
+PDF statistics:
+ 1848 PDF objects out of 2073 (max. 8388607)
+ 144 named destinations out of 1000 (max. 500000)
+ 454 words of extra memory for PDF output out of 10000 (max. 10000000)
+

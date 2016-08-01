@@ -1,0 +1,27 @@
+//
+//  dynamique.cpp
+//  
+//
+//  Created by Sophie Jacquin on 11/10/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
+#include "Graphe.h"
+
+
+
+main()
+{
+    double eval=0;
+    double aDeverser=200000000;
+    Graphe G(72000,8760,0,0,aDeverser);
+    cout <<"sommets créés\n";
+    G.genererArcs();
+    int nbSommets =G.getNbSommet();
+    cout<< "Arbre créé de " <<nbSommets<<" sommets \n";
+    eval =G.plusCourtChemin();
+    cout <<"la solution a pour valeur "<< eval<<endl;
+
+}

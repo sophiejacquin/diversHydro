@@ -1,0 +1,183 @@
+setwd("Dropbox/These-Sophie/cas1Bis/Résultats/Test/")
+data= read.table(testGrand1,skip=1)
+data= read.table("testGrand1",skip=1)
+best1= data[.,4]
+best1= data[,4]
+best1
+moy1= data[,5]
+temps1=data[,3]
+for(i in 2:20){
+ch<-paste('testGrand',i,sep='')
+data=read.table(ch,skip=1)
+best1=cbind(best1,data[,4])
+moy1<-cbind(moy1,data[,5])
+temps1<-cbind(temps1,data[,3])
+}
+best1
+moyTemps1= colMeans(temps1)
+moyTemps[2000]
+moyTemps1[2000]
+moyTemps1
+moyTemps1= rowMeans(temps1)
+moyTemps[2000]
+moyTemps1[2000]
+moyBest1=rowMeans(best1)
+moyMoy1=rowMeans(moy1)
+moyBest1[1]
+moyMoy1[1]
+moyTemps1[1]
+moyBest1[500]
+moyMoy1[500]
+moyTemps1[500]
+moyBest1[1000]
+moyTemps1[1000]
+moyMoy1[1000]
+moyBest1[1500]
+moyMoy1[1500]
+moyTemps1[1500]
+moyBest1[2000]
+moyMoy1[2000]
+moyTemps1[2000]
+setwd("Dropbox/These-Sophie/cas1Bis/Résultats/Test2/")
+setwd("../Test2/")
+data= read.table("test1",skip=1)
+moy2= data[,5]
+best2=data[,4]
+temps2=data[,3]
+for(i in 2:20){
+ch<-paste('test',i,sep='')
+data=read.table(ch,skip=1)
+moy2<-cbind(moy2,data[,5])
+best2<-cbind(best2,data[,4])
+temps2<-cbind(temps2,data[,3])
+}
+for(i in 8:20){
+ch<-paste('test',i,sep='')
+data=read.table(ch,skip=1)
+temps2<-cbind(temps2,data[,3])
+best2<-cbind(best2,data[,4])
+moy2<-cbind(moy2,data[,5])
+}
+Moymoy2= rowMeans(moy2)
+Moytemps2=rowMeans(temps2)
+moyBest2=roxMeans(best2)
+moyBest2=rowMeans(best2)
+moyBest2[1]
+moyBest2[500]
+moyBest2[1000]
+moyBest2[1500]
+moyBest2[2000]
+Moymoy2[2000]
+Moymoy2[1500]
+Moymoy2[1000]
+Moymoy2[500]
+Moymoy2[1]
+Moytemps[1]
+Moytemps2[1]
+Moytemps2[500]
+Moytemps2[1000]
+Moytemps2[1500]
+Moytemps2[2000]
+plot(moyBest2)
+plot(moyBest2,col='red')
+plot(moyBest2,col='red',type="l")
+line(moyMoy2)
+line(Moymoy2)
+lines(Moymoy2)
+setwd("../Test3/")
+data= read.table("test1",skip=1)
+moy3= data[,5]
+best3=data[,4]
+temps3=data[,3]
+for(i in 2:20){
+ch<-paste('test',i,sep='')
+data=read.table(ch,skip=1)
+moy3 <-cbind(moy3,data[,5])
+bet3<-cbind(best3,data[,4])
+best3<-cbind(best3,data[,4])
+temps3<-cbind(temps3,data[,3])
+}
+for(i in 3:20){
+ch<-paste('test',i,sep='')
+data=read.table(ch,skip=1)
+best3<-cbind(best3,data[,4])
+temps3<-cbind(temps3,data[,3])
+moy3 <-cbind(moy3,data[,5])
+}
+moyBest3=rowMeans(best3)
+best3[1]
+best3[500]
+best3[1000]
+best3[1500]
+best3[2000]
+best3[2500]
+best3[3000]
+moyMoy3[1]
+moyMoy3<-rowMeans(moy3)
+moyMoy3[1]
+moyMoy3[500]
+moyMoy3[1000]
+moyMoy3[1500]
+moyMoy3[2000]
+moyMoy3[2500]
+moyMoy3[3000]
+moyTemps3<-rowMeans(temps3)
+moyTemps3[1]
+moyTemps3[500]
+moyTemps3[1000]
+moyTemps3[1500]
+moyTemps3[2000]
+moyTemps3[3000]
+moyTemps3[3500]
+moyTemps3[2500]
+plot(moyBest3,col="red",type='l')
+plot(moyBest3,col="red")
+moyBest3[1400]
+moyBest3[1450]
+moyBest3[1500]
+moyBest3
+data3= read.table("test1",skip=1)
+moy3= data3[,5]
+best3=data3[,4]
+temps3=data3[,3]
+for(i in 2:20){ ch<-paste('test',i,sep='') data3=read.table(ch,skip=1) moy3 <-cbind(moy3,data3[,5]) best3<-cbind(best3,data3[,4]) temps3<-cbind(temps3,data3[,3]) }
+for(i in 2:20){ ch<-paste('test',i,sep='') data3=read.table(ch,skip=1) moy3 <-cbind(moy3,data3[,5]) best3<-cbind(best3,data3[,4]) temps3<-cbind(temps3,data3[,3]) }
+for(i in 2:20){ ch<-paste('test',i,sep='')
+data3=read.table(ch,skip=1)
+moy3 <-cbind(moy3,data3[,5])
+best3<-cbind(best3,data3[,4])
+temps3<-cbind(temps3,data3[,3])
+}
+data3= read.table("test1",skip=1)
+temps3=data3[,3]
+best3=data3[,4]
+moy3= data3[,5]
+for(i in 3:20){ ch<-paste('test',i,sep='')
+data3= read.table("test1",skip=1)
+temps3<-cbind(temps3,data3[,3])
+best3<-cbind(best3,data3[,4])
+moy3 <-cbind(moy3,data3[,5])
+}
+bestMoy<-rowMeans(best3)
+plot(best3)
+plot(bestMoy)
+moyBest3=rowMeans(best3)
+plot(moyBest3)
+plot(moyBest3)
+moyTemps3=rowMeans(temps3)
+plot(temps3,best3)
+plot(moyTemps3,moyBest3)
+plot(moyTemps3,moyBest3)
+moyTemps3
+plot(moyTemps3)
+temps3
+best3
+?cbind
+test1
+best1
+best2
+plot(temps[1])
+plot(temps3[1])
+plot(temps3[,1])
+temps3[,1]
+temps3

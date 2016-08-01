@@ -1,0 +1,101 @@
+//v
+//  Decodeur.h
+//  
+//
+//Created by Sophie Jacquin on 12/09/12.
+//Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+//
+#ifndef _DecodeurG_h
+#define _DecodeurG_h
+#include "eodeltaPlaning.h"
+#include "Graphe3.h"
+#include <strstream> 
+typedef eodeltaPlaning<double> Indi;
+class DecodeurG
+{
+    private :
+    
+    int nbPeriodes;
+    int pas;
+    Systeme systeme;
+    public :
+    //Constructeur
+    DecodeurG(int _nbPeriodes,int _pas)
+    {
+        nbPeriodes=_nbPeriodes;
+        pas =_pas;
+        systeme.ini("entrees.txt",1);
+    }
+    //Constructeur
+    DecodeurG()
+    {
+        nbPeriodes=30;
+        pas =72000;
+       systeme.ini("entrees.txt",1);
+        
+    }
+    //Evaluateur
+    double evaluer(Indi indi)
+    {
+        cout << "Dans decodeur \n";
+        int longueurPeriode= 8760 /nbPeriodes;
+        int i,j,k,l;
+        double quantiteDeversee=0;
+        double evaluation=0;
+       	double Qtot=systeme.getReservoirs()[1].getApportAnnuel();
+	double Vdispo;
+	double Vmini;
+	double V=systeme.getReservoirs()[1].getVinit();
+	double Vmax=systeme.getReservoirs()[1].getVmax();
+	double Vmin=systeme.getReservoirs()[1].getVmin();
+	double aDeverser;
+	double reserve= systeme.getReservoirs()[1].getReserve()* longueurPeriode;
+        for(i=0;i< indi.getNbPeriodes();i++)
+        {
+		V = V+systeme.getReservoirs()[1].getApportPeriode(i,longueurPeriode) - reserve;
+		Vmini= V-Vmax;
+		if(Vmini<0) Vmini=0;
+		Vdispo= V-Vmin-Vmini;
+		if(Qtot-quantiteDeversee<Vdispo)Vdispo=Qtot-quantiteDeversee;
+		aDeverser=indi.getProportion(i)*Vdispo+Vmini;
+		V=V - aDeverser;
+	
+		
+                       //On regarde s'il y a à reévaluer
+            if(indi.getEvaluation(i)==-1)
+            {
+                //On construit le graphe
+              //  cout<<"on va creer graphe "<<endl;;
+                  
+                Graphe G(pas,longueurPeriode,i*longueurPeriode,quantiteDeversee,aDeverser,&systeme);
+               // cout <<"sommets créés : "<<G.getNbSommet()<<endl;
+                G.genererArcs();
+                  
+            
+                //cout <<"sommets créés : "<<G.getNbSommet()<<endl;
+                //cout<<"quantite à deverser : "<<aDeverser<<endl;
+               // cout<<"on a cree graphe \n";
+                
+                double eval = G.plusCourtChemin();
+		
+               //cout<<"plus court chemin \n";
+                indi.setEvaluation(i,eval);
+              
+
+            }
+		quantiteDeversee=quantiteDeversee+ aDeverser+reserve;
+		//cout << "là\n";
+            evaluation= evaluation+indi.getEvaluation(i);
+           
+
+		//cout << "là\n";
+
+        }
+        //cout<< "quantité déversée :"<<quantiteDeversee<<endl;
+        return evaluation;
+    }
+    
+};
+
+#endif

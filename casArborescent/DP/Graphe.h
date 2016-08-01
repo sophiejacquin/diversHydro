@@ -1,0 +1,443 @@
+#ifndef _Graphe_h
+#define _Graphe_h
+#include <vector>
+#include<cstring>
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <vector>
+#include "Sommet.h"
+#include "Systeme.h"
+//A finir pour le 12:
+
+
+class Graphe{
+	private:
+	vector<vector<Sommet*> > graphe;
+	Systeme* systeme;
+	int nbReservoirs;
+	double* pas;
+	//vector<double> quantite;
+	vector<double> qTot;
+	int nbHeures;
+	int heureDebut;
+	public:
+	//Constructeur
+	Graphe(Systeme* _systeme,double* _pas,vector<double> _qTot,int _nbHeures,int _heureDebut)
+	{
+		systeme=_systeme;
+		nbReservoirs=systeme->getNbReservoirs();
+		pas=_pas;
+		qTot=_qTot;
+		nbHeures=_nbHeures;
+		heureDebut=_heureDebut;
+		//quantite= qteDebit;
+	}
+	double constructeur()
+	{
+		int i,h;
+		//Creation racine
+		vector<double> null;
+		vector<double> V;
+		//int nbContenus=0;//taille d'un vecteur
+		for(i=0;i<nbReservoirs;i++)//Dans version decodeur l'état initial est obtenu avec les apports et les quantites deja débitées
+		{
+			//nbContenus=nbContenus+1;//+ systeme->getReservoir(i)->getDistance();
+			V.push_back(systeme->getReservoir(i)->getVinit());
+			
+		}
+		//cout<<"création de V"<<endl;
+		for(i=0;i<nbReservoirs;i++)
+		{
+			null.push_back(0);
+		}
+		Sommet* racine=new Sommet(null,0);
+		//cout<<racine->contenu.size();
+		//cout<<"création de racine"<<endl;
+		vector<Sommet*> tab0;
+		tab0.push_back(racine);
+		graphe.push_back(tab0);
+		//cout<<"tab0 ajoutée"<<endl;
+		//Remplir toutes les tables:
+		for(h=1;h<nbHeures;h++)
+		{
+			
+			Sommet* deb=new Sommet();
+			vector<Sommet*> tab;
+			tab.push_back(deb);
+			//Calcul de V :l;
+			
+			for(i=0;i<nbReservoirs;i++) V[i]=V[i]+systeme->getReservoir(i)->getApport(h-1);
+			//cout<<"on va appeler remplir"<<endl;
+			remplir(tab,graphe[h-1],0,V,h);
+			//cout<< "taille contenu tab0 :"<<tab[1]->contenu.size()<<" "<<tab.size()<<endl;
+			graphe.push_back(tab);
+			cout<<tab.size()<<" "<<graphe[h].size()<<endl;
+			//cout<<"h "<<h<<endl;
+		}
+		//cout<<"tables remplites"<<endl;
+		//Dernier élément: 
+		
+		Sommet* final=new Sommet(qTot,-1);
+		//cout<<"sommet final construit"<<endl;
+		//Le lier aux autres : A modifier dans le cas DECODEUR:
+		double qT=0;
+		double profit;
+		//cout<<graphe.size()<<endl;
+		for(i=0;i<graphe[nbHeures-1].size();i++)
+		{
+			 profit=0;
+			
+			//cout<<"dans boucle"<<endl;
+			for(int n=0;n<nbReservoirs;n++)
+			{
+				qT=0;
+				//cout<<"n "<<n<<endl;
+				
+				// cout<<final->contenu[n]<<"  "<<graphe[nbHeures-1][i]->contenu[n]<<endl;
+				if(qTot[n]>=graphe[nbHeures-1][i]->contenu[n] && profit>=0)
+				{
+					double qte=(final->contenu[n]-graphe[nbHeures-1][i]->contenu[n]);
+						double qminConduite=systeme->getReservoir(n)->getQmin();//
+					if(systeme->getReservoir(n)->getNbTurbines()>0)
+					{
+						int tourbine=systeme->getReservoir(n)->getTurbine(0);
+						//cout<<"dans si"<<endl;
+						
+						if(qminConduite<0) qminConduite=0;
+						if(qte>=qminConduite)
+						{
+							qte=qte-qminConduite;
+							
+							
+							double qminTurbine=systeme->getTurbine(tourbine)->getQmin(V[n] -3600*graphe[nbHeures-1][i]->contenu[n]);
+							if (qte>qminTurbine)
+							{
+								double qmaxTurbine=systeme->getTurbine(tourbine)->getQMax(systeme->getTurbine(tourbine)->getNbInt()-1);//changer ça
+								if(qte<qmaxTurbine) {qT= qte;qte=0;}
+								else {qte=qte-qmaxTurbine;
+									qT=qmaxTurbine;}
+							
+							}
+							if(systeme->getReservoir(n)->getQmax()==-1 || qte+qminConduite<=systeme->getReservoir(n)->getQmax())
+					 		{
+								profit =profit+ systeme->getTurbine(tourbine)->getBenefice(V[n] -3600*graphe[nbHeures-1][i]->contenu[n],qT,heureDebut+nbHeures-1);	
+								//cout<<profit<<endl;
+							}
+							
+						}//fin si
+						else {
+								
+								profit=-1; //cout<<"fe"<<endl;
+							}
+					
+
+					}//fin si
+					else {
+						if(qte<qminConduite &&(systeme->getReservoir(n)->getQmax()<0||qte>systeme->getReservoir(n)->getQmax()))
+							profit=-1;
+						}
+			
+				}//fin si
+				else profit=-1; 
+				//
+			
+			}//fin pour
+		
+			if(profit>=0 && profit+graphe[nbHeures-1][i]->valeur>final->valeur)
+			{
+				//cout<<"lA"<<endl;
+				//changement predecesseur et remplissage
+				final->valeur=profit+graphe[nbHeures-1][i]->valeur;
+				final->pred=graphe[nbHeures-1][i];
+				//remplissage des distance
+				
+				
+			}
+		}
+		vector<Sommet*> tabfin;
+		tabfin.push_back(final);
+		graphe.push_back(tabfin);
+		//Restitution des résultats :
+		cout <<"fonction objective "<<final->valeur<<endl;
+		Sommet* s=final;
+		for(i=0;i<nbHeures;i++)
+		{
+			cout<<nbHeures-i<<" :"<<endl;
+			for(int n=0;n<nbReservoirs;n++)
+			{
+				cout<<"Reservoir "<<n<<" :"<<s->contenu[n]-(s->pred)->contenu[n]<<" valeur "<<s->valeur<<endl;
+			}
+			s=s->pred;
+		}
+	}
+	void remplir(vector<Sommet*> & t, vector<Sommet*> & tpred,int n,vector<double> V, int h)//Revoir ça...
+	{
+		int i,j,k,l;
+		//Recopier
+		vector<Sommet*> tc=t;//voir si ça marche
+		//Efacer
+		t.clear();
+		double Vmin=systeme->getReservoir(n)->getVmin(h-1);
+		double qmaxConduite=systeme->getReservoir(n)->getQmax();
+		double itmax=qmaxConduite;
+		double qminConduite=systeme->getReservoir(n)->getQmin();
+		Reservoir* R=systeme->getReservoir(n);
+		int nbParents=R->getNbParents();
+		if(qmaxConduite>0)
+			{
+				
+				if(systeme->getReservoir(n)->getNbTurbines()>0 )//changer cette parte si passage au cas plusieurs turbines
+				{
+					int tourbine=systeme->getReservoir(n)->getTurbine(0);
+					itmax=itmax+systeme->getTurbine(tourbine)->getQMax(systeme->getTurbine(tourbine)->getNbInt()-1);
+					
+				}
+				
+			}
+		double Vmax=systeme->getReservoir(n)->getVmax();
+		
+		//Reconstruire
+		for(i=0;i<tc.size();i++)
+		{
+			//cout<<i<<endl;
+			//Calcul de qmin et qmax
+			double vR=V[n];
+			int tcSize=tc[i]->contenu.size();
+			for(j=0;j<nbParents;j++)
+			{
+				int parent = R->getParents()[j];
+				vR=vR+tc[i]->contenu[parent]*3600;
+			}
+			
+			
+			double qmax=(vR-Vmin)/3600;
+			if(qmax> qTot[n]) qmax=qTot[n];
+			
+			if(qmaxConduite>0)
+			{
+				
+				if(qmax>itmax*h)
+				{
+					 qmax=itmax*h;
+					//cout<<qmax<<" "<<itmax<<" "<<qmax/h<<" "<<qmax/h-itmax<<endl;
+				}
+			}
+			//if (qmax>quantite[n]) qmax=quantite[n];
+			double qmin=0;
+			
+			if(qmin<(vR-Vmax)/3600)
+			{
+				 qmin=(vR-Vmax)/3600;
+			}
+			
+			if(qmin<h*qminConduite){ qmin=h*qminConduite;}
+			if(qmax>qTot[n]-(nbHeures-h)*qminConduite) qmax=qTot[n]-(nbHeures-h)*qminConduite;
+			//if(h==20)cout<<"qmin : "<<qmin<<" qmax : "<<qmax<<" pas : "<<pas[n]<<" itmax "<<itmax<< " h*qminC "<<h*qminConduite<<" qTot "<<qTot[n]<<"reservoir"<<endl; 
+			//Remplissage : 
+			//cout<<"remplissage"<<endl;courage
+			double q;
+			for(q=qmin;q<qmax;q=q+pas[n])
+			{
+				Sommet* s=new Sommet();
+				for(j=0;j<tcSize;j++)
+				{
+					s->contenu.push_back(tc[i]->contenu[j]);
+				}
+				//cout<<"recopie"<<endl;
+				s->contenu.push_back(q);
+				//cout<<"ajou de q"<<endl;
+				bool trouve=true;
+				if(n==nbReservoirs-1)
+				{
+					//if(h==20) cout<<"là "<<endl;
+					 trouve=false;//s'en servir
+					//cout<<"size de tpred "<<tpred.size()<<endl;
+					for(k=0;k<tpred.size();k++)
+					{
+						//if(h==20) cout<<tpred[k]->contenu[l]<<endl;
+						//cout<<"k "<<k<<endl;
+						//tester si possibilité:
+						bool pos=true;
+						l=0;
+						while(pos==true && l<nbReservoirs)
+						{
+							if(tpred[k]->contenu[l]>s->contenu[l]){ pos=false;}
+							//cout<<"contenu  :"<<s->contenu[l]-tpred[k]->contenu[l]<<endl;
+							if(systeme->getReservoir(l)->getQmin()>0 && s->contenu[l]-tpred[k]->contenu[l]<systeme->getReservoir(l)->getQmin()-0.000001){ pos=false;}
+							//pas trop grand :
+							if(systeme->getReservoir(l)->getQmax()>0)
+							{
+								double qteMax=systeme->getReservoir(l)->getQmax();
+								if(systeme->getReservoir(n)->getNbTurbines()>0 ) 
+								{
+									Turbine* tuu =systeme->getTurbine(systeme->getReservoir(n)->getTurbine(0));
+									qteMax=qteMax+tuu->getQMax(tuu->getNbInt()-1);
+								}
+								if(s->contenu[l]-tpred[k]->contenu[l]>qteMax){ pos=false;}
+							}
+							
+							l++;
+						}
+						double val=-1;
+						//if(h==20) cout<<"pos "<<pos<<endl;
+						//cout<<"lien"<<endl;
+						if(pos==true) val=lien(tpred[k],s,h,V);
+						///cout<<"sorti de lien"<<endl;
+						if(val>=0)
+						{
+							if (h==20)cout<<"valpo"<<endl;
+							trouve=true;
+							if(val+tpred[k]->valeur >s->valeur)
+							{
+								//cout<<"change"<<endl;
+								s->valeur=val+tpred[k]->valeur;
+								s->pred=tpred[k];
+								
+							}
+							
+						}
+						
+					}
+				}
+				
+				//cout<<"avan bug"<<endl;
+				if(trouve==true){t.push_back(s);//if(n==nbReservoirs-1)cout<<"il y a un "<<endl;
+				}
+				else delete s;
+				//delete s;
+				//cout<<"ajou de t"<<endl;
+			}
+				Sommet* s=new Sommet();
+				for(j=0;j<tc[i]->contenu.size();j++)
+				{
+					s->contenu.push_back(tc[i]->contenu[j]);
+				}
+				//cout<<"recopie"<<endl;
+				s->contenu.push_back(qmax);
+				//cout<<"ajou de q"<<endl;
+				bool trouve=true;
+				if(n==nbReservoirs-1)
+				{
+					//cout<<"là?"<<endl;
+					 trouve=false;//s'en servir
+					//cout<<"size de tpred "<<tpred.size()<<endl;
+					for(k=0;k<tpred.size();k++)
+					{
+						//cout<<"k "<<k<<endl;
+						//tester si possibilité:
+						bool pos=true;
+						l=0;
+						while(pos==true && l<nbReservoirs)
+						{
+							//contenu croissant :
+							if(tpred[k]->contenu[l]>s->contenu[l]){ pos=false;if(h==20)cout<<tpred[k]->contenu[l]<<" "<<l<<" qte "<<s->contenu[l]-tpred[k]->contenu[l]<<" "<<s->contenu[l]<<endl;}
+							//pas trop petit :
+							if(systeme->getReservoir(l)->getQmin()>0 && s->contenu[l]-tpred[k]->contenu[l]<systeme->getReservoir(l)->getQmin()-0.00001){ pos=false;if(h==20)cout<<tpred[k]->contenu[l]<<" "<<l<<" qmin "<<systeme->getReservoir(l)->getQmin()<<" "<<s->contenu[l]-tpred[k]->contenu[l]<<" "<<s->contenu[l]<<endl;}
+							//pas trop grand :
+							if(systeme->getReservoir(l)->getQmax()>0)
+							{
+								double qteMax=systeme->getReservoir(l)->getQmax();
+								if(systeme->getReservoir(n)->getNbTurbines()>0 ) 
+								{
+									Turbine* tuu =systeme->getTurbine(systeme->getReservoir(n)->getTurbine(0));
+									qteMax=qteMax+tuu->getQMax(tuu->getNbInt()-1);//qttention
+								}
+								if(s->contenu[l]-tpred[k]->contenu[l]>qteMax) {pos=false;
+								if(h==20)cout<<tpred[k]->contenu[l]<<" "<<l<<" "<<qteMax<<" "<<s->contenu[l]-tpred[k]->contenu[l]<<" "<<s->contenu[l]<<endl;}
+							}
+							l++;
+						}
+						double val=-1;
+						//cout<<"lien"<<endl;
+						if(pos==true) val=lien(tpred[k],s,h,V);
+						///cout<<"sorti de lien"<<endl;
+						if(val>=0)
+						{
+							//cout<<"valpo"<<endl;
+							trouve=true;
+							if(val+tpred[k]->valeur >s->valeur)
+							{
+								//cout<<"change"<<endl;
+								s->valeur=val+tpred[k]->valeur ;
+								s->pred=tpred[k];
+								
+							}
+							
+						}
+						
+					}
+				}
+				
+				//cout<<"avan bug"<<endl;
+				if(trouve==true){t.push_back(s);//if(n==nbReservoirs-1)cout<<"il y a un "<<endl;
+				}
+				else delete s;
+				
+			//delete tc[i];
+			//cout<<"on a deleté"<<endl;
+		}
+		//delete tc :
+		//for(i=0;i<tc.size();i++) delete tc[i];
+		//cout<<"on a deleté"<<endl;
+		if(n<nbReservoirs-1)
+		{
+			remplir(t,tpred,n+1,V,h);
+		}
+		
+		
+	}
+	double lien(Sommet* s1, Sommet* s2,int h,vector<double> V)// return -1 s'il n'y a pas de lien la valeur suite au lien sinon
+	{
+		//cout<<"dans lien"<<endl;
+		int n;
+		double retour=0;
+		double qT=0;
+		for(n=0;n<nbReservoirs;n++)
+		{
+			//cout<<n<<endl;
+			//a faire juste sil y a une turbine!!!
+			double cont1=s1->contenu[n];
+			double cont2=s2->contenu[n];
+			double qmaxConduite =systeme->getReservoir(n)->getQmax();
+			Reservoir * R=systeme->getReservoir(n);
+			//if(cont1>cont2)return -1;
+			//else
+			//{
+				double qte=(cont2-cont1);
+				double qminConduite=systeme->getReservoir(n)->getQmin();//
+				if(qminConduite<0) qminConduite=0;
+				qte=qte-qminConduite;
+					if(R->getNbTurbines()>0)
+					{
+						int tourbine =systeme->getReservoir(n)->getTurbine(0);
+						double qminTurbine=systeme->getTurbine(tourbine)->getQmin(V[n]-R->getApport(h-1)-3600*cont1);
+						if (qte>qminTurbine)
+						{
+							//cout<<qte<<endl;
+							//cout<<"ICIII"<<endl;
+							//ca c'est faux...
+							double qmaxTurbine=systeme->getTurbine(tourbine)->getQMax(systeme->getTurbine(tourbine)->getNbInt()-1);
+							//cout<<"qmax "<<qmaxTurbine<<endl;
+							if(qte<qmaxTurbine) {qT= qte;qte=0;}
+							else {qte=qte-qmaxTurbine;qT=qmaxTurbine;}
+							//cout<<"qT "<<qT;
+						}
+						//if(qmaxConduite!=-1 && qte+qminConduite>qmaxConduite) {//cout<<"quantite trop grande "<<n<<endl;
+							//return -1;}
+						//else {
+						//cout<<"on est ici"<<endl;
+						retour=retour+ systeme->getTurbine(tourbine)->getBenefice(V[n]-R->getApport(h-1)-cont1*3600,qT,h-1); 
+						//if(h<10) cout<<"retour "<<n<<" : "<<retour<<" qT :"<<qT<<endl;
+						//cout<<" retour : "<<retour<<endl;
+						
+					}
+		
+		
+		}
+		return retour;	
+	}
+};
+
+
+#endif
